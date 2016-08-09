@@ -36,18 +36,9 @@
                 </div>
             </div>
         </div>
-        <div id="menuPrincipal">
-            <div id="navcontainer">
-                <ul id="navlist">
-                    <li><a href="<?php echo DOMAIN; ?>">Home</a></li>
-                    <li><a href="<?php echo DOMAIN; ?>system-x">System X</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact </a></li>
-                    <li class="videoNav"><a href="">Videos</a></li>
-                </ul>
-            </div>
-        </div>
+
+        <?php require_once TEMPLATE . 'top_menu.php'; ?>
+
         <div class="">
             <div class="main">
                 <div class="col-main">

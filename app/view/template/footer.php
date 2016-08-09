@@ -2,20 +2,19 @@
     <div id="contentfooter">
         <div id="footerMain">
             <ul>
-                <li><a href="">HOME</a> |</li>
-                <li><a href="">ABOUT</a> |</li>
-                <li><a href="">CUSTOMER SERVICE</a> |</li>
-                <!--<li><a href="/careers.html">CAREERS</a> |</li>-->
-                <li><a href="">BUSINESS OPPORTUNITIES</a> |</li>
-                <li><a href="">SYSTEM X PRO</a> |</li>
-                <li><a href="">DIAMOND</a> |</li>
-                <li><a href="">WHOLESALE / BULK CERAMIC COATING</a></li>
+                <li><a href="<?php echo DOMAIN; ?>">HOME</a> |</li>
+                <li><a href="<?php echo DOMAIN; ?>about">ABOUT</a> |</li>
+                <li><a href="<?php echo DOMAIN; ?>customer-service">CUSTOMER SERVICE</a> |</li>
+                <li><a href="<?php echo DOMAIN; ?>partnerships">BUSINESS OPPORTUNITIES</a> |</li>
+                <li><a href="<?php echo DOMAIN; ?>system-x">SYSTEM X PRO</a> |</li>
+                <li><a href="<?php echo DOMAIN; ?>diamond">DIAMOND</a> |</li>
+                <li><a href="<?php echo DOMAIN; ?>bulk-ceramic-coating">WHOLESALE / BULK CERAMIC COATING</a></li>
             </ul>
             <ul style='margin-top:0'>
-                <li><a href="">MOTORCYCLE</a> |</li>
-                <li><a href="">AIRCRAFT</a> |</li>
-                <li><a href="">MARINE</a> |</li>
-                <li><a href="">RV</a>|</li>
+                <li><a href="<?php echo DOMAIN; ?>motorcycle">MOTORCYCLE</a> |</li>
+                <li><a href="<?php echo DOMAIN; ?>aircraft">AIRCRAFT</a> |</li>
+                <li><a href="<?php echo DOMAIN; ?>marine">MARINE</a> |</li>
+                <li><a href="<?php echo DOMAIN; ?>rv">RV</a>|</li>
                 <li><a href="">TRUCK</a>|</li>
                 <li><a href="">COMMERCIAL</a>|</li>
                 <li><a href="">CUSTOM FORMULATIONS</a></li>
