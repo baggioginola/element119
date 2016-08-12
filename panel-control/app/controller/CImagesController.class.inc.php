@@ -21,10 +21,8 @@ class Images extends BaseController
     private $category = null;
 
     private $sizes = array(
-        'categorias' => array('0' => array('width' => 927, 'height' => 285),
-            '1' => array('width' => 307, 'height' => 128),
-            '2' => array('width' => 307, 'height' => 128),
-            '3' => array('width' => 307, 'height' => 128)),
+        'categorias' => array('0' => array('width' => 285, 'height' => 210),
+            '1' => array('width' => 350, 'height' => 291)),
         'productos' => array('0' => array('width' => 420, 'height' => 420 ),
             '1' => array('width' => 420, 'height' => 420),
             '2' => array('width' => 420, 'height' => 420),

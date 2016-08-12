@@ -59,7 +59,8 @@ function masterDatatable(url, columns) {
 
 function getImage(root_images, name, i)
 {
-    var url = root_images + name + '-' + i + '.jpg';
+    var extension = '.jpg';
+    var url = root_images + name + '-' + i + extension;
     var exists = $.ajax({
         url: url,
         type: "POST",
@@ -69,7 +70,13 @@ function getImage(root_images, name, i)
     });
 
     if(exists.status != 200) {
-        return root_images + name + '-' + i + '.png';
+        extension = '.png';
+        url = root_images + name + '-' + i + extension;
     }
-    return url;
+    return {
+        url: url,
+        extension: extension,
+        name: name + '-' + i + extension
+    };
+
 }

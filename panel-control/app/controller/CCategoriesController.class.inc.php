@@ -17,6 +17,7 @@ class Categories extends BaseController
 
     private $validParameters = array(
         'id' => TYPE_INT,
+        'nombre_descripcion' => TYPE_ALPHA,
         'nombre' => TYPE_ALPHA,
         'active' => TYPE_INT,
         'imagenes' => TYPE_INT,

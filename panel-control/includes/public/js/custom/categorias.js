@@ -1,24 +1,24 @@
 /**
  * Created by mario.cuevas on 5/12/2016.
  */
-$(document).ready(function ()
-{
+$(document).ready(function () {
     $("#id_imagen").fileinput({
         uploadUrl: "imagenes/add",
         allowedFileExtensions: ["jpg", "png"],
-        maxFileCount: 4,
-        minFileCount : 4,
+        maxFileCount: 2,
+        minFileCount: 2,
         uploadAsync: false,
         language: "es",
         showUpload: false,
-        fileActionSettings : {showUpload: false},
+        fileActionSettings: {showUpload: false, showZoom: false},
+        previewSettings: {image: {width: "auto", height: "100px"}},
         overwriteInitial: false,
         purifyHtml: true,
         uploadExtraData: function (previewId, index) {
-            var info = {"type": "categorias", "name" : $("#id_nombre").val()};
+            var info = {"type": "categorias", "name": $("#id_nombre").val()};
             return info;
         }
-    }).on('filebatchuploadsuccess', function(event, data) {
+    }).on('filebatchuploadsuccess', function (event, data) {
         var out = '';
     });
 
@@ -48,27 +48,28 @@ $(document).ready(function ()
 
         $.post(url, data, function (response, status) {
             if (status == 'success') {
-
-                var images = [];
-
                 var IMAGES_CATEGORY = IMAGES + 'categorias' + '/' + response.key_nombre + '/';
-                for(var i = 0; i < 4; i++) {
-                    var src = getImage(IMAGES_CATEGORY, response.key_nombre, i);
-                    images[i] = '<img src="'+src+'" class="file-preview-image" alt="Desert" title="Desert" style="width:auto; height:160px;">';
+                var images = [];
+                var initialPreviewConfigObj = [];
+
+                for (var i = 0; i < CATEGORY_NUM_IMAGES; i++) {
+                    var dataImage = getImage(IMAGES_CATEGORY, response.key_nombre, i);
+                    images[i] = '<img src="' + dataImage.url + '" class="file-preview-image" alt="Desert" title="Desert" style="width:auto; height:160px;">';
+
+                    var initialPreviewConfigItem = {};
+                    initialPreviewConfigItem['caption'] = dataImage.name;
+                    initialPreviewConfigObj.push(initialPreviewConfigItem);
                 }
 
                 $('#id_imagen').fileinput('refresh', {
                     initialPreview: images,
                     initialPreviewFileType: 'image',
-                    fileActionSettings : {showDrag: false},
+                    fileActionSettings: {showDrag: false},
                     initialPreviewShowDelete: true,
-                    initialPreviewConfig: [
-                        {caption: "Nature-1.jpg", size: 847000, key: 11},
-                        {caption: "Nature-2.jpg", size: 817000, key: 12},
-                        {caption: "Nature-1.jpg", size: 847000, key: 11},
-                        {caption: "Nature-1.jpg", size: 847000, key: 11}
-                    ]
-
+                    maxFileCount: 2,
+                    minFileCount: 2,
+                    initialPreviewConfig: initialPreviewConfigObj,
+                    layoutTemplates: {actionDelete: '<button type="button" class="kv-file-remove btn btn-xs btn-default delete" title="Eliminar Archivo"><i class="glyphicon glyphicon-trash text-danger"></i></button>\n'}
                 });
 
                 $.each(response, function (key, val) {
@@ -77,7 +78,20 @@ $(document).ready(function ()
                     $("textarea[name=" + key + "]").val(val);
                 });
             }
+
             $('#submit_id').val(response.id);
+
+            $('.delete').click(function () {
+                var frame = $(this).closest('.file-preview-frame');
+                frame.fadeOut(800, function () {
+                    $(this).remove();
+                    if ($.trim($(".file-initial-thumbs").html())=='') {
+                        var file_drop_zone = $(".file-drop-zone");
+                        var file_drop_zone_title = '<div class="file-drop-zone-title">Arrastre y suelte aquí los archivos …</div>';
+                        file_drop_zone.append(file_drop_zone_title);
+                    }
+                });
+            });
         }, 'json');
         return false;
     });
@@ -99,30 +113,32 @@ $(document).ready(function ()
         return false;
     });
 
-    var form = $('#form_global').submit(function ()
-    {
+    var form = $('#form_global').submit(function () {
         if ($('#id_submit').hasClass('disabled')) {
             return false;
         }
 
-        var url = 'categorias/checkDuplicatedName';
-        var data_name = {nombre:$('#id_nombre').val()}
+        var type = $('#submit_type').val();
+        if(type == 'categorias/add') {
+            var url = 'categorias/checkDuplicatedName';
+            var data_name = {nombre: $('#id_nombre').val()}
 
-        var checkDuplicated = $.ajax({
-            url: url,
-            type: "POST",
-            cache: false,
-            data: data_name,
-            dataType: 'json',
-            async: false,
-            success: function (data) {
-                return data;
+            var checkDuplicated = $.ajax({
+                url: url,
+                type: "POST",
+                cache: false,
+                data: data_name,
+                dataType: 'json',
+                async: false,
+                success: function (data) {
+                    return data;
+                }
+            });
+
+            if (checkDuplicated.responseJSON.status == 200) {
+                submit_response(form, checkDuplicated.responseJSON, 'categorias/add');
+                return false;
             }
-        });
-
-        if(checkDuplicated.responseJSON.status == 200) {
-            submit_response(form, checkDuplicated.responseJSON, 'categorias/add');
-            return false;
         }
 
         if ($('#id_imagen').fileinput('upload') == null) {
@@ -130,11 +146,12 @@ $(document).ready(function ()
         }
 
         var data = $(this).serialize();
-        var type = $('#submit_type').val();
+
         if (type == 'categorias/edit') {
             var id = $('#submit_id').val();
             data = data + '&' + $.param({'id': id});
         }
+
         $.ajax({
             url: type,
             type: "POST",
