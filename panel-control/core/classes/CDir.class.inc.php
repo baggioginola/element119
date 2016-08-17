@@ -35,8 +35,9 @@ class CDir{
         return true;
     }
 
-    public function scanDir()
+    public function scanDir($dir)
     {
+        $this->dir = $dir;
         $this->log[] = 'Scan directory: ';
         $this->log[] = scandir($this->dir);
     }

@@ -16,7 +16,9 @@ class Images extends BaseController
     private $parameters = array();
 
     private $name = null;
+    private $key_name = null;
     private $pathImage = null;
+    private $old_path_image = null;
     private $type = null;
     private $category = null;
 
@@ -73,6 +75,35 @@ class Images extends BaseController
         return json_encode($this->getResponse());
     }
 
+    public function updatePath()
+    {
+        if(!$this->_setPathImageName()) {
+            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+        }
+        if(!$this->_setKeyName()) {
+            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+        }
+
+        if($this->name != $this->key_name) {
+            $this->old_path_image = BASE_IMAGES . $this->type . "/" . $this->key_name . "/";
+            if(!rename($this->old_path_image, $this->pathImage)) {
+                return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+            }
+
+            $files = glob($this->pathImage . '*.{jpg,png}', GLOB_BRACE);
+
+            foreach($files as $key) {
+                $index_extension = getIndexExtension($key);
+
+                if(!rename($key, $this->pathImage . $this->name . '-' . $index_extension)) {
+                    return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+                }
+            }
+
+        }
+        return json_encode($this->getResponse());
+    }
+
     /**
      * @return bool
      */
@@ -114,6 +145,7 @@ class Images extends BaseController
         if(isset($_REQUEST['categoria'])) {
             $this->category = formatForUrl($_REQUEST['categoria']);
         }
+
         $this->type = trim($_REQUEST['type']);
 
         if($this->type == 'categorias') {
@@ -134,6 +166,15 @@ class Images extends BaseController
             return false;
         }
         $this->name = formatForUrl($_REQUEST['name']);
+        return true;
+    }
+
+    private function _setKeyName()
+    {
+        if(!isset($_REQUEST['key_nombre']) || empty($_REQUEST['key_nombre'])) {
+            return false;
+        }
+        $this->key_name = $_REQUEST['key_nombre'];
         return true;
     }
 

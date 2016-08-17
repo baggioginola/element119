@@ -15,7 +15,7 @@ function submit_response(form, data, url) {
     form.trigger("reset");
     bootbox.alert(data.message);
 
-    $("#id_imagen").fileinput("enable").fileinput("refresh");
+    $("#id_imagen").fileinput("refresh");
 }
 
 /**

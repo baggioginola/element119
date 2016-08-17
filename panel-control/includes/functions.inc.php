@@ -110,3 +110,16 @@ function formatString($string)
 
     return stripExcessWhitespace(trim($string));
 }
+
+function getIndexExtension($file)
+{
+    $array = explode('/', $file);
+
+    $file_name = $array[sizeof($array) - 1];
+
+    $index = explode('-', $file_name);
+
+    $index = $index[sizeof($index) - 1];
+
+    return $index;
+}

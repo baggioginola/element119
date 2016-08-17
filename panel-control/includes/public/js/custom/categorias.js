@@ -12,14 +12,17 @@ $(document).ready(function () {
         showUpload: false,
         fileActionSettings: {showUpload: false, showZoom: false},
         previewSettings: {image: {width: "auto", height: "100px"}},
-        overwriteInitial: false,
+        //overwriteInitial: true,
         purifyHtml: true,
+        autoReplace: true,
         uploadExtraData: function (previewId, index) {
             var info = {"type": "categorias", "name": $("#id_nombre").val()};
             return info;
         }
     }).on('filebatchuploadsuccess', function (event, data) {
         var out = '';
+    }).on('fileloaded', function (event, file, previewId, index, reader) {
+        $('#upload_images').val('1');
     });
 
     $('#reset_button').click(function () {
@@ -54,44 +57,36 @@ $(document).ready(function () {
 
                 for (var i = 0; i < CATEGORY_NUM_IMAGES; i++) {
                     var dataImage = getImage(IMAGES_CATEGORY, response.key_nombre, i);
-                    images[i] = '<img src="' + dataImage.url + '" class="file-preview-image" alt="Desert" title="Desert" style="width:auto; height:160px;">';
+                    images[i] = '<img src="' + dataImage.url + '" class="file-preview-image" alt="Desert" title="Desert" style="width:auto; height:100px;">';
 
                     var initialPreviewConfigItem = {};
                     initialPreviewConfigItem['caption'] = dataImage.name;
+                    initialPreviewConfigItem['key'] = i;
                     initialPreviewConfigObj.push(initialPreviewConfigItem);
                 }
 
                 $('#id_imagen').fileinput('refresh', {
+                    uploadUrl: "imagenes/edit",
                     initialPreview: images,
                     initialPreviewFileType: 'image',
-                    fileActionSettings: {showDrag: false},
-                    initialPreviewShowDelete: true,
-                    maxFileCount: 2,
-                    minFileCount: 2,
+                    initialPreviewShowDelete: false,
                     initialPreviewConfig: initialPreviewConfigObj,
-                    layoutTemplates: {actionDelete: '<button type="button" class="kv-file-remove btn btn-xs btn-default delete" title="Eliminar Archivo"><i class="glyphicon glyphicon-trash text-danger"></i></button>\n'}
+                    validateInitialCount: true,
+                    fileActionSettings: {showDrag: false},
+                    append: true,
+                    showUploadedThumbs: false
                 });
 
                 $.each(response, function (key, val) {
-
                     $("input[name=" + key + "]").val(val);
                     $("textarea[name=" + key + "]").val(val);
                 });
+
+                $('#upload_images').val('0');
             }
 
             $('#submit_id').val(response.id);
 
-            $('.delete').click(function () {
-                var frame = $(this).closest('.file-preview-frame');
-                frame.fadeOut(800, function () {
-                    $(this).remove();
-                    if ($.trim($(".file-initial-thumbs").html())=='') {
-                        var file_drop_zone = $(".file-drop-zone");
-                        var file_drop_zone_title = '<div class="file-drop-zone-title">Arrastre y suelte aquí los archivos …</div>';
-                        file_drop_zone.append(file_drop_zone_title);
-                    }
-                });
-            });
         }, 'json');
         return false;
     });
@@ -114,12 +109,13 @@ $(document).ready(function () {
     });
 
     var form = $('#form_global').submit(function () {
+
         if ($('#id_submit').hasClass('disabled')) {
             return false;
         }
 
         var type = $('#submit_type').val();
-        if(type == 'categorias/add') {
+        if (type == 'categorias/add') {
             var url = 'categorias/checkDuplicatedName';
             var data_name = {nombre: $('#id_nombre').val()}
 
@@ -141,7 +137,7 @@ $(document).ready(function () {
             }
         }
 
-        if ($('#id_imagen').fileinput('upload') == null) {
+        if ($('#id_imagen').fileinput('upload') == null && $('#upload_images').val() == 1) {
             return false;
         }
 
@@ -150,6 +146,22 @@ $(document).ready(function () {
         if (type == 'categorias/edit') {
             var id = $('#submit_id').val();
             data = data + '&' + $.param({'id': id});
+
+            if($('#upload_images').val() == 0) {
+                var info = {"type": "categorias", "name": $("#id_nombre").val(), key_nombre: $('#key_nombre').val()};
+                var url_edit = 'imagenes/update';
+                $.ajax({
+                    url: url_edit,
+                    type: "POST",
+                    cache: false,
+                    data: info,
+                    dataType: 'json',
+                    async: true,
+                    success: function (response) {
+
+                    }
+                });
+            }
         }
 
         $.ajax({

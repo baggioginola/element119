@@ -15,4 +15,12 @@ $app->group('/imagenes', function () use($app) {
         }
         echo $result;
     });
+
+    $app->post('/update', function() use($app){
+        require_once __CONTROLLER__ . 'CImagesController.class.inc.php';
+        if(!$result = Images::singleton()->updatePath()) {
+            echo 'Fail';
+        }
+        echo $result;
+    });
 });

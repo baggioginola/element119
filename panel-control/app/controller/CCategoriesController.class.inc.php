@@ -21,7 +21,8 @@ class Categories extends BaseController
         'nombre' => TYPE_ALPHA,
         'active' => TYPE_INT,
         'imagenes' => TYPE_INT,
-        'descripcion' => TYPE_ALPHA
+        'descripcion' => TYPE_ALPHA,
+        'key_nombre' => TYPE_ALPHA
     );
 
     /**
@@ -151,7 +152,9 @@ class Categories extends BaseController
                 $this->parameters[$key] = stripExcessWhitespace(sanitizeVariable(trim($value)));
                 continue;
             }
-            $this->parameters[$key] = formatString($value);
+            if($key != 'key_nombre') {
+                $this->parameters[$key] = formatString($value);
+            }
         }
         return true;
     }
