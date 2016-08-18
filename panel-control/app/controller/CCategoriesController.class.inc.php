@@ -7,6 +7,7 @@
  */
 
 require_once 'CBaseController.class.inc.php';
+require_once CLASSES . 'CDir.class.inc.php';
 require_once __MODEL__ . 'CCategoriesModel.class.inc.php';
 
 class Categories extends BaseController
@@ -14,7 +15,7 @@ class Categories extends BaseController
     private static $object = null;
 
     private $parameters = array();
-
+    private static $type = 'categorias';
     private $validParameters = array(
         'id' => TYPE_INT,
         'nombre_descripcion' => TYPE_ALPHA,
@@ -75,6 +76,17 @@ class Categories extends BaseController
         return json_encode($result);
     }
 
+    public function getKeyById($id = null)
+    {
+        if (empty($id)) {
+            return false;
+        }
+
+        $result = CategoriesModel::singleton()->getById($id);
+
+        return $result['key_nombre'];
+    }
+
     /**
      * @return string
      */
@@ -112,6 +124,10 @@ class Categories extends BaseController
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
+        $pathImage = BASE_IMAGES . self::$type . "/" . $this->parameters['key_nombre'] . "/";
+
+        CDir::singleton()->delete($pathImage);
+
         return json_encode($this->getResponse());
     }
 
@@ -124,7 +140,7 @@ class Categories extends BaseController
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
-        if(!$result = CategoriesModel::singleton()->getByName($this->parameters['key_nombre'])) {
+        if (!$result = CategoriesModel::singleton()->getByName($this->parameters['key_nombre'])) {
             return json_encode($this->getResponse(STATUS_FAILURE_CLIENT, MESSAGE_EMPTY));
         }
 
@@ -145,14 +161,14 @@ class Categories extends BaseController
         }
 
         foreach ($_POST as $key => $value) {
-            if($key == 'nombre') {
+            if ($key == 'nombre') {
                 $this->parameters['key_nombre'] = formatForUrl($value);
             }
-            if($key == 'descripcion') {
+            if ($key == 'descripcion') {
                 $this->parameters[$key] = stripExcessWhitespace(sanitizeVariable(trim($value)));
                 continue;
             }
-            if($key != 'key_nombre') {
+            if ($key != 'key_nombre') {
                 $this->parameters[$key] = formatString($value);
             }
         }

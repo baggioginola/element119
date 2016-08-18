@@ -26,6 +26,7 @@ define('INCLUDES', DOMAIN . 'includes/');
 #templates
 define('TEMPLATE',  __ROOT__ . '/app/view/template/');
 define('BASE_IMAGES',  __ROOT__ . '/includes/public/img/');
+define('BASE_IMAGES_CATEGORIES',  __ROOT__ . '/includes/public/img/categorias/');
 #Databases
 define('DBHOST', 'localhost');
 define('DBNAME', 'element119');

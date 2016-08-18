@@ -8,6 +8,7 @@
 
 require_once 'CBaseController.class.inc.php';
 require_once CLASSES . 'CDir.class.inc.php';
+require_once CLASSES . 'CFile.class.inc.php';
 
 class Images extends BaseController
 {
@@ -25,7 +26,7 @@ class Images extends BaseController
     private $sizes = array(
         'categorias' => array('0' => array('width' => 285, 'height' => 210),
             '1' => array('width' => 350, 'height' => 291)),
-        'productos' => array('0' => array('width' => 420, 'height' => 420 ),
+        'productos' => array('0' => array('width' => 420, 'height' => 420),
             '1' => array('width' => 420, 'height' => 420),
             '2' => array('width' => 420, 'height' => 420),
             '3' => array('width' => 420, 'height' => 420),
@@ -50,18 +51,20 @@ class Images extends BaseController
      */
     public function add()
     {
-
-        if(!$this->_setPathImageName()) {
+        if (!CDir::singleton()->setDir()) {
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
-        if(!CDir::singleton()->createDir($this->pathImage)) {
+        if (!CDir::singleton()->createDir()) {
             return false;
         }
 
-        if($this->type == 'categorias') {
-            if(!CDir::singleton()->createDir($this->pathImage . '/productos/')) {
-                return false;
+        if (CDir::singleton()->_getType() == 'categorias') {
+            if (!CDir::singleton()->createDir(CDir::singleton()->getDir() . '/productos/')) {
+                return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+            }
+            if (!CDir::singleton()->setDir()) {
+                return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
             }
         }
 
@@ -69,114 +72,68 @@ class Images extends BaseController
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
-        if(!$this->uploadImage()) {
+        if (!$this->upload()) {
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
         return json_encode($this->getResponse());
     }
 
-    public function updatePath()
+    public function edit()
     {
-        if(!$this->_setPathImageName()) {
-            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
-        }
-        if(!$this->_setKeyName()) {
+        if (!CDir::singleton()->setDir()) {
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
-        if($this->name != $this->key_name) {
-            $this->old_path_image = BASE_IMAGES . $this->type . "/" . $this->key_name . "/";
-            if(!rename($this->old_path_image, $this->pathImage)) {
-                return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
-            }
-
-            $files = glob($this->pathImage . '*.{jpg,png}', GLOB_BRACE);
-
-            foreach($files as $key) {
-                $index_extension = getIndexExtension($key);
-
-                if(!rename($key, $this->pathImage . $this->name . '-' . $index_extension)) {
-                    return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
-                }
-            }
-
+        if (!CDir::singleton()->setKeyName()) {
+            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
+
+        if (!CDir::singleton()->rename()) {
+            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+        }
+
+        if(!CFile::singleton()->delete(CDir::singleton()->getDir(), CDir::singleton()->getName())) {
+            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+        }
+
+        if (!$this->_setParameters()) {
+            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+        }
+
+        if (!$this->upload()) {
+            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+        }
+
         return json_encode($this->getResponse());
     }
 
     /**
      * @return bool
      */
-    private function uploadImage()
+    private function upload()
     {
-        if(empty($this->parameters)) {
+        if (empty($this->parameters)) {
             return false;
         }
 
-        ini_set('memory_limit',20000000000);
+        $dir = CDir::singleton()->getDir();
+        ini_set('memory_limit', 20000000000);
         foreach ($this->parameters as $parameter => $value) {
-            if (!move_uploaded_file($this->parameters[$parameter]['tmp_name'],
-                $this->pathImage . $this->parameters[$parameter]['name'])) {
+            if (!move_uploaded_file($this->parameters[$parameter]['tmp_name'], $dir . $this->parameters[$parameter]['name'])) {
                 return false;
             }
-            chmod($this->pathImage . $this->parameters[$parameter]['name'], 0777);
+            chmod($dir . $this->parameters[$parameter]['name'], 0777);
         }
 
+        $type = CDir::singleton()->_getType();
         foreach ($this->parameters as $parameter => $value) {
-                resizeImage($this->pathImage . $this->parameters[$parameter]['name'], $this->sizes[$this->type][$parameter]['height'], $this->sizes[$this->type][$parameter]['width'], $this->parameters[$parameter]['extension']);
+            resizeImage($dir . $this->parameters[$parameter]['name'], $this->sizes[$type][$parameter]['height'], $this->sizes[$type][$parameter]['width'], $this->parameters[$parameter]['extension']);
         }
-        ini_restore ( 'memory_limit' );
+        ini_restore('memory_limit');
         return true;
     }
 
-    /**
-     * @return bool
-     */
-    private function _setPathImageName()
-    {
-        if(!isset($_REQUEST['type']) || empty($_REQUEST['type'])) {
-            return false;
-        }
 
-        if(!$this->_setPathName()) {
-            return false;
-        }
-
-        if(isset($_REQUEST['categoria'])) {
-            $this->category = formatForUrl($_REQUEST['categoria']);
-        }
-
-        $this->type = trim($_REQUEST['type']);
-
-        if($this->type == 'categorias') {
-            $this->pathImage = BASE_IMAGES . $this->type . "/" . $this->name . "/";
-        }
-        else {
-            $this->pathImage = BASE_IMAGES . "categorias/" . $this->category . "/" . $this->type . "/" . $this->name . '/';
-        }
-        return true;
-    }
-
-    /**
-     * @return bool
-     */
-    private function _setPathName()
-    {
-        if(!isset($_REQUEST['name']) || empty($_REQUEST['name'])) {
-            return false;
-        }
-        $this->name = formatForUrl($_REQUEST['name']);
-        return true;
-    }
-
-    private function _setKeyName()
-    {
-        if(!isset($_REQUEST['key_nombre']) || empty($_REQUEST['key_nombre'])) {
-            return false;
-        }
-        $this->key_name = $_REQUEST['key_nombre'];
-        return true;
-    }
 
     /**
      * @return bool
@@ -190,10 +147,10 @@ class Images extends BaseController
         foreach ($_FILES as $key => $value) {
             foreach ($value as $item => $val) {
                 foreach ($val as $tmp => $name) {
-                    if($item == 'name') {
+                    if ($item == 'name') {
                         $ext = explode(".", $name);
                         $lastElement = sizeof($ext);
-                        $name = $this->name . "-" . $i . "." . strtolower($ext[$lastElement - 1]);
+                        $name = CDir::singleton()->getName() . "-" . $i . "." . strtolower($ext[$lastElement - 1]);
                         $this->parameters[$i]['extension'] = strtolower($ext[$lastElement - 1]);
                     }
                     $this->parameters[$i][$item] = $name;

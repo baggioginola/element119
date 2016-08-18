@@ -23,4 +23,12 @@ $app->group('/imagenes', function () use($app) {
         }
         echo $result;
     });
+
+    $app->post('/edit', function() use($app){
+        require_once __CONTROLLER__ . 'CImagesController.class.inc.php';
+        if(!$result = Images::singleton()->edit()) {
+            echo 'Fail';
+        }
+        echo $result;
+    });
 });

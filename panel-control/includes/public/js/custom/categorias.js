@@ -74,7 +74,11 @@ $(document).ready(function () {
                     validateInitialCount: true,
                     fileActionSettings: {showDrag: false},
                     append: true,
-                    showUploadedThumbs: false
+                    showUploadedThumbs: false,
+                    uploadExtraData: function (previewId, index) {
+                        var info = {"type": "categorias", "name": $("#id_nombre").val(), "key_nombre": $('#key_nombre').val()};
+                        return info;
+                    }
                 });
 
                 $.each(response, function (key, val) {
@@ -93,9 +97,10 @@ $(document).ready(function () {
 
     $('#datatable tbody').on('click', '#btn_delete', function () {
         var id = table.row($(this).parents('tr')).data().id;
+        var nombre = table.row($(this).parents('tr')).data().nombre;
         bootbox.confirm("Eliminar elemento?", function (result) {
             if (result == true) {
-                var data = {id: id, active: 0};
+                var data = {id: id, active: 0, nombre: nombre};
                 var url = 'categorias/delete';
                 $.post(url, data, function (response, status) {
                     if (status == 'success') {
@@ -149,7 +154,7 @@ $(document).ready(function () {
 
             if($('#upload_images').val() == 0) {
                 var info = {"type": "categorias", "name": $("#id_nombre").val(), key_nombre: $('#key_nombre').val()};
-                var url_edit = 'imagenes/update';
+                var url_edit = 'dir/update';
                 $.ajax({
                     url: url_edit,
                     type: "POST",

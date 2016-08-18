@@ -16,7 +16,7 @@ $(document).ready(function ()
         overwriteInitial: false,
         purifyHtml: true,
         uploadExtraData: function (previewId, index) {
-            var info = {"type": "productos", "name" : $("#id_nombre").val(), "categoria" : $("#id_categoria option:selected").text()};
+            var info = {"type": "productos", "name" : $("#id_nombre").val(), "categoria" : $("#id_categoria").val()};
 
             return info;
         }
