@@ -72,6 +72,10 @@ class CategoriesModel extends Database
         return true;
     }
 
+    /**
+     * @param string $id
+     * @return array|bool|null
+     */
     public function getById($id = '')
     {
         if (empty($id)) {
@@ -99,6 +103,10 @@ class CategoriesModel extends Database
         return $result_array;
     }
 
+    /**
+     * @param string $name
+     * @return array|bool|null
+     */
     public function getByName($name = '')
     {
         if (empty($name)) {

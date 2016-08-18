@@ -30,6 +30,10 @@ class CDir extends BaseController
         return self::$object;
     }
 
+    /**
+     * @param null $dir
+     * @return bool
+     */
     public function createDir($dir = null)
     {
         if (!empty($dir)) {
@@ -48,6 +52,10 @@ class CDir extends BaseController
         return true;
     }
 
+    /**
+     * @param null $dir
+     * @return bool
+     */
     public function delete($dir = null)
     {
         if (empty($dir)) {
@@ -65,6 +73,9 @@ class CDir extends BaseController
         return true;
     }
 
+    /**
+     * @return bool
+     */
     public function rename()
     {
         if ($this->name != $this->key_name) {
@@ -76,6 +87,9 @@ class CDir extends BaseController
         return true;
     }
 
+    /**
+     * @return string
+     */
     public function update()
     {
         if (!CDir::singleton()->setDir()) {
@@ -96,6 +110,9 @@ class CDir extends BaseController
         return json_encode($this->getResponse());
     }
 
+    /**
+     * @return bool
+     */
     public function setDir()
     {
         if (!$this->_setType()) {
@@ -119,11 +136,17 @@ class CDir extends BaseController
         return true;
     }
 
+    /**
+     * @return null
+     */
     public function getDir()
     {
         return $this->dir;
     }
 
+    /**
+     * @return bool
+     */
     private function setName()
     {
         if (!isset($_REQUEST['name']) || empty($_REQUEST['name'])) {
@@ -133,6 +156,9 @@ class CDir extends BaseController
         return true;
     }
 
+    /**
+     * @return bool
+     */
     private function _setType()
     {
         if (!isset($_REQUEST['type']) || empty($_REQUEST['type'])) {
@@ -143,6 +169,9 @@ class CDir extends BaseController
         return true;
     }
 
+    /**
+     * @return bool
+     */
     private function _setCategory()
     {
         if (isset($_REQUEST['categoria'])) {
@@ -151,6 +180,9 @@ class CDir extends BaseController
         return true;
     }
 
+    /**
+     * @return bool
+     */
     public function setKeyName()
     {
         if (!isset($_REQUEST['key_nombre']) || empty($_REQUEST['key_nombre'])) {
@@ -161,21 +193,33 @@ class CDir extends BaseController
         return true;
     }
 
+    /**
+     * @return array
+     */
     public function getLog()
     {
         return $this->log;
     }
 
+    /**
+     * @return null
+     */
     public function _getType()
     {
         return $this->type;
     }
 
+    /**
+     * @return null
+     */
     public function getName()
     {
         return $this->name;
     }
 
+    /**
+     * @param $dir
+     */
     public function scanDir($dir)
     {
         $this->dir = $dir;

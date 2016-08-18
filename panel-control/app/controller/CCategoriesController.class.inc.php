@@ -76,6 +76,10 @@ class Categories extends BaseController
         return json_encode($result);
     }
 
+    /**
+     * @param null $id
+     * @return bool
+     */
     public function getKeyById($id = null)
     {
         if (empty($id)) {

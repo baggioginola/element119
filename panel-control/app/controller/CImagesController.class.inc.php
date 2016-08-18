@@ -78,6 +78,9 @@ class Images extends BaseController
         return json_encode($this->getResponse());
     }
 
+    /**
+     * @return string
+     */
     public function edit()
     {
         if (!CDir::singleton()->setDir()) {
@@ -132,8 +135,6 @@ class Images extends BaseController
         ini_restore('memory_limit');
         return true;
     }
-
-
 
     /**
      * @return bool
