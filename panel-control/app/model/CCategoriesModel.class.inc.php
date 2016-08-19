@@ -14,7 +14,7 @@ class CategoriesModel extends Database
 
     public static function singleton()
     {
-        if(is_null(self::$object)) {
+        if (is_null(self::$object)) {
             self::$object = new self();
         }
         return self::$object;
@@ -34,7 +34,7 @@ class CategoriesModel extends Database
 
         $log[] = $query;
 
-        Logs::singleton()->setLog($log,__METHOD__,__LINE__);
+        Logs::singleton()->setLog($log, __METHOD__, __LINE__);
 
         if (!$result = $this->query($query)) {
             Logs::singleton()->addLogs('Categories');

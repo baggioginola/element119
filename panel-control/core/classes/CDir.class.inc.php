@@ -8,7 +8,7 @@
  */
 
 require_once CLASSES . 'CFile.class.inc.php';
-require_once __CONTROLLER__. 'CBaseController.class.inc.php';
+require_once __CONTROLLER__ . 'CBaseController.class.inc.php';
 
 class CDir extends BaseController
 {
@@ -92,22 +92,43 @@ class CDir extends BaseController
      */
     public function update()
     {
-        if (!CDir::singleton()->setDir()) {
+        if (!$this->setDir()) {
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
-        if (!CDir::singleton()->setKeyName()) {
-            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
-        }
-
-        if (!CDir::singleton()->rename()) {
+        if (!$this->setKeyName()) {
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
-        if (!CFile::singleton()->rename(CDir::singleton()->getDir(), CDir::singleton()->getName())) {
+        if (!$this->rename()) {
+            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
+        }
+
+        if (!CFile::singleton()->rename($this->getDir(), $this->getName())) {
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
         return json_encode($this->getResponse());
+    }
+
+    public function edit()
+    {
+        if (!$this->setDir()) {
+            return false;
+        }
+
+        if (!$this->setKeyName()) {
+            return false;
+        }
+
+        if (!$this->rename()) {
+            return false;
+        }
+
+        if (!CFile::singleton()->delete($this->getDir(), $this->getName())) {
+            return false;
+        }
+
+        return true;
     }
 
     /**

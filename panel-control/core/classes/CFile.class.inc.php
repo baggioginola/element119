@@ -1,11 +1,11 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: mario.cuevas
  * Date: 8/17/2016
  * Time: 12:19 PM
  */
-
 class CFile
 {
     private static $object = null;
@@ -14,7 +14,7 @@ class CFile
 
     public static function singleton()
     {
-        if(!isset(self::$object)) {
+        if (!isset(self::$object)) {
             self::$object = new CFile();
         }
         return self::$object;
@@ -22,7 +22,7 @@ class CFile
 
     public function delete($path = null)
     {
-        if(empty($path)) {
+        if (empty($path)) {
             return false;
         }
 
@@ -38,7 +38,7 @@ class CFile
 
     public function rename($path = null, $name = null)
     {
-        if(empty($path) || empty($name)) {
+        if (empty($path) || empty($name)) {
             return false;
         }
 

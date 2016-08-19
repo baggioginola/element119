@@ -14,8 +14,36 @@ function submit_response(form, data, url) {
 
     form.trigger("reset");
     bootbox.alert(data.message);
+    $('#upload_images').val('1');
 
-    $("#id_imagen").fileinput("refresh");
+
+    var image = $('#id_imagen');
+
+    image.fileinput("destroy");
+
+    image.fileinput({
+        uploadUrl: "imagenes/add",
+        allowedFileExtensions: ["jpg", "png"],
+        maxFileCount: 2,
+        minFileCount: 2,
+        uploadAsync: false,
+        language: "es",
+        showUpload: false,
+        fileActionSettings: {showUpload: false, showZoom: false},
+        previewSettings: {image: {width: "auto", height: "100px"}},
+        //overwriteInitial: true,
+        purifyHtml: true,
+        autoReplace: true,
+        uploadExtraData: function (previewId, index) {
+            var info = {"type": "categorias", "name": $("#id_nombre").val()};
+            return info;
+        }
+    }).on('filebatchuploadsuccess', function (event, data) {
+        var out = '';
+    }).on('fileloaded', function (event, file, previewId, index, reader) {
+        $('#upload_images').val('1');
+    });
+    image.fileinput("enable");
 }
 
 /**

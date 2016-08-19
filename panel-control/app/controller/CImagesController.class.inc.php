@@ -16,13 +16,6 @@ class Images extends BaseController
 
     private $parameters = array();
 
-    private $name = null;
-    private $key_name = null;
-    private $pathImage = null;
-    private $old_path_image = null;
-    private $type = null;
-    private $category = null;
-
     private $sizes = array(
         'categorias' => array('0' => array('width' => 285, 'height' => 210),
             '1' => array('width' => 350, 'height' => 291)),
@@ -56,7 +49,7 @@ class Images extends BaseController
         }
 
         if (!CDir::singleton()->createDir()) {
-            return false;
+            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
         if (CDir::singleton()->_getType() == 'categorias') {
@@ -75,6 +68,7 @@ class Images extends BaseController
         if (!$this->upload()) {
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
+
         return json_encode($this->getResponse());
     }
 
@@ -83,19 +77,7 @@ class Images extends BaseController
      */
     public function edit()
     {
-        if (!CDir::singleton()->setDir()) {
-            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
-        }
-
-        if (!CDir::singleton()->setKeyName()) {
-            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
-        }
-
-        if (!CDir::singleton()->rename()) {
-            return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
-        }
-
-        if(!CFile::singleton()->delete(CDir::singleton()->getDir(), CDir::singleton()->getName())) {
+        if (!CDir::singleton()->edit()) {
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
@@ -133,6 +115,7 @@ class Images extends BaseController
             resizeImage($dir . $this->parameters[$parameter]['name'], $this->sizes[$type][$parameter]['height'], $this->sizes[$type][$parameter]['width'], $this->parameters[$parameter]['extension']);
         }
         ini_restore('memory_limit');
+
         return true;
     }
 
@@ -144,6 +127,7 @@ class Images extends BaseController
         if (!isset($_FILES) || empty($_FILES)) {
             return false;
         }
+
         $i = 0;
         foreach ($_FILES as $key => $value) {
             foreach ($value as $item => $val) {
@@ -160,6 +144,7 @@ class Images extends BaseController
                 $i = 0;
             }
         }
+
         return true;
     }
 }

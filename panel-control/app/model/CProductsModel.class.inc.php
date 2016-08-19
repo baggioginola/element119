@@ -15,7 +15,7 @@ class ProductsModel extends Database
 
     public static function singleton()
     {
-        if(is_null(self::$object)) {
+        if (is_null(self::$object)) {
             self::$object = new self();
         }
         return self::$object;
@@ -114,7 +114,7 @@ class ProductsModel extends Database
 
         $query = "SELECT " . self::$table . ".id, " . self::$table . ".nombre FROM " . self::$table . "
                     INNER JOIN categoria on " . self::$table . ".id_categoria = categoria.id
-                    WHERE producto.key_nombre = '" . $name . "' and producto.active = true and categoria.id = " .$id_categoria;
+                    WHERE producto.key_nombre = '" . $name . "' and producto.active = true and categoria.id = " . $id_categoria;
 
         if (!$result = $this->query($query)) {
             return false;

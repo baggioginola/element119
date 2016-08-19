@@ -117,7 +117,7 @@ class Products extends BaseController
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
-        if(!$result = ProductsModel::singleton()->getByName($this->parameters['key_nombre'], $this->parameters['id_categoria'])) {
+        if (!$result = ProductsModel::singleton()->getByName($this->parameters['key_nombre'], $this->parameters['id_categoria'])) {
             return json_encode($this->getResponse(STATUS_FAILURE_CLIENT, MESSAGE_EMPTY));
         }
 
@@ -138,7 +138,7 @@ class Products extends BaseController
         }
 
         foreach ($_POST as $key => $value) {
-            if($key == 'nombre') {
+            if ($key == 'nombre') {
                 $this->parameters['key_nombre'] = formatForUrl($value);
             }
             $this->parameters[$key] = formatString($value);

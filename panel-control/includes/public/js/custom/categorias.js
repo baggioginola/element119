@@ -2,7 +2,8 @@
  * Created by mario.cuevas on 5/12/2016.
  */
 $(document).ready(function () {
-    $("#id_imagen").fileinput({
+
+    $('#id_imagen').fileinput({
         uploadUrl: "imagenes/add",
         allowedFileExtensions: ["jpg", "png"],
         maxFileCount: 2,
@@ -12,7 +13,6 @@ $(document).ready(function () {
         showUpload: false,
         fileActionSettings: {showUpload: false, showZoom: false},
         previewSettings: {image: {width: "auto", height: "100px"}},
-        //overwriteInitial: true,
         purifyHtml: true,
         autoReplace: true,
         uploadExtraData: function (previewId, index) {
@@ -24,6 +24,8 @@ $(document).ready(function () {
     }).on('fileloaded', function (event, file, previewId, index, reader) {
         $('#upload_images').val('1');
     });
+
+    //intiFileInput(image, info_image);
 
     $('#reset_button').click(function () {
         $("#id_imagen").fileinput("refresh");
