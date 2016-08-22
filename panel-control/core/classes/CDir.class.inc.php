@@ -9,6 +9,7 @@
 
 require_once CLASSES . 'CFile.class.inc.php';
 require_once __CONTROLLER__ . 'CBaseController.class.inc.php';
+require_once __CONTROLLER__ . 'CCategoriesController.class.inc.php';
 
 class CDir extends BaseController
 {
@@ -79,7 +80,13 @@ class CDir extends BaseController
     public function rename()
     {
         if ($this->name != $this->key_name) {
-            $old_path_image = BASE_IMAGES_CATEGORIES . $this->key_name . "/";
+            if($this->_getType() == 'categorias') {
+                $old_path_image = BASE_IMAGES_CATEGORIES . $this->key_name . "/";
+            }
+            else {
+                $old_path_image = BASE_IMAGES_CATEGORIES . $this->category . '/productos/' . $this->key_name . "/";
+            }
+
             if (!rename($old_path_image, $this->getDir())) {
                 return false;
             }
@@ -124,7 +131,7 @@ class CDir extends BaseController
             return false;
         }
 
-        if (!CFile::singleton()->delete($this->getDir(), $this->getName())) {
+        if (!CFile::singleton()->delete($this->getDir())) {
             return false;
         }
 

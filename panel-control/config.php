@@ -8,7 +8,7 @@
 define('ENVIRONMENT', 'test'); # must be production or test.
 define('__ROOT__', dirname(__FILE__));
 //define('PROJECT', 'vc/test/nasiol/panel-control/');
-define('PROJECT', 'vc/test/Github/element119/panel-control/');
+define('PROJECT', 'github/element119/panel-control/');
 define('DOMAIN', 'http://' . $_SERVER['HTTP_HOST'] . '/' . PROJECT);
 
 define('CSS', DOMAIN . 'includes/public/css/');

@@ -55,6 +55,8 @@
             </div>
             <input type="hidden" id="submit_type" value="productos/add" />
             <input type="hidden" id="submit_id" />
+            <input type="hidden" id="upload_images" value="1" />
+            <input type="hidden" id="key_nombre" name="key_nombre" value="1"/>
         </form>
     </div>
 </div>

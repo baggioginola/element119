@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo CSS ?>custom.css" media="print" data-handle="default" />
     <script type="text/javascript" src="<?php echo JS; ?>functions.js" data-handle="default"></script>
     <script type="text/javascript" src="<?php echo JS; ?>slider.js"></script>
+    <script type="text/javascript" src="<?php echo JS; ?>custom/config.js"></script>
     <script type="text/javascript" src="<?php echo JS; ?>custom/baseFunctions.js"></script>
 </head>
 <body class=" cms-index-index cms-home">

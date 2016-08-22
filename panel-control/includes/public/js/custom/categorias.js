@@ -24,9 +24,7 @@ $(document).ready(function () {
     }).on('fileloaded', function (event, file, previewId, index, reader) {
         $('#upload_images').val('1');
     });
-
-    //intiFileInput(image, info_image);
-
+    
     $('#reset_button').click(function () {
         $("#id_imagen").fileinput("refresh");
         $('#form_global').trigger("reset");

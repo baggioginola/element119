@@ -19,12 +19,12 @@ class Images extends BaseController
     private $sizes = array(
         'categorias' => array('0' => array('width' => 285, 'height' => 210),
             '1' => array('width' => 350, 'height' => 291)),
-        'productos' => array('0' => array('width' => 352, 'height' => 116),
-            '1' => array('width' => 350, 'height' => 291),
-            '2' => array('width' => 350, 'height' => 291),
-            '3' => array('width' => 350, 'height' => 291),
-            '4' => array('width' => 350, 'height' => 291),
-            '5' => array('width' => 350, 'height' => 291)
+        'productos' => array('0' => array('width' => 420, 'height' => 420),
+            '1' => array('width' => 420, 'height' => 420),
+            '2' => array('width' => 420, 'height' => 420),
+            '3' => array('width' => 420, 'height' => 420),
+            '4' => array('width' => 420, 'height' => 420),
+            '5' => array('width' => 420, 'height' => 420)
         )
     );
 

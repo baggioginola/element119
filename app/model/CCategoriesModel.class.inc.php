@@ -2,20 +2,19 @@
 /**
  * Created by PhpStorm.
  * User: mario.cuevas
- * Date: 7/6/2016
- * Time: 4:01 PM
+ * Date: 6/24/2016
+ * Time: 4:50 PM
  */
-
 require_once CLASSES . 'CDatabase.class.inc.php';
 
-class ProductsModel extends Database
+class CategoriesModel extends Database
 {
     private static $object = null;
-    private static $table = 'producto';
+    private static $table = 'categoria';
 
     public static function singleton()
     {
-        if (is_null(self::$object)) {
+        if(is_null(self::$object)) {
             self::$object = new self();
         }
         return self::$object;
@@ -31,14 +30,17 @@ class ProductsModel extends Database
         }
         $result_array = array();
 
-        $query = "SELECT categoria.nombre as categoria_nombre, " . self::$table . ".id, " . self::$table . ".nombre, precio
-                    FROM " . self::$table . "
-                    INNER JOIN categoria ON producto.id_categoria = categoria.id
-                    WHERE categoria.active = true and producto.active = true";
+        $query = "SELECT key_nombre,nombre FROM " . self::$table . " WHERE active = true";
+
+        $log[] = $query;
+
+        Logs::singleton()->setLog($log,__METHOD__,__LINE__);
 
         if (!$result = $this->query($query)) {
+            Logs::singleton()->addLogs('Categories');
             return false;
         }
+        Logs::singleton()->addLogs('Categories');
 
         while ($row = $this->fetch_assoc($result)) {
             $result_array[] = $row;
@@ -82,13 +84,7 @@ class ProductsModel extends Database
 
         $result_array = array();
 
-        $query = "SELECT categoria.key_nombre as categoria_nombre, categoria.id as id_categoria, 
-                    " . self::$table . ".id, " . self::$table . ".nombre, precio,
-                    " . self::$table . ".descripcion, especificaciones, 
-                    " . self::$table . ".key_nombre as key_nombre, 
-                    " . self::$table . ".imagenes as imagenes
-                    FROM " . self::$table . "
-                    INNER JOIN categoria ON producto.id_categoria = categoria.id WHERE producto.id = '" . $id . "' ";
+        $query = "SELECT id,nombre FROM " . self::$table . " WHERE id = '" . $id . "' ";
 
         if (!$result = $this->query($query)) {
             return false;
@@ -103,9 +99,9 @@ class ProductsModel extends Database
         return $result_array;
     }
 
-    public function getByName($name = '', $id_categoria = '')
+    public function getByName($name = '')
     {
-        if (empty($name) || empty($id_categoria)) {
+        if (empty($name)) {
             return false;
         }
 
@@ -115,9 +111,7 @@ class ProductsModel extends Database
 
         $result_array = array();
 
-        $query = "SELECT " . self::$table . ".id, " . self::$table . ".nombre FROM " . self::$table . "
-                    INNER JOIN categoria on " . self::$table . ".id_categoria = categoria.id
-                    WHERE producto.key_nombre = '" . $name . "' and producto.active = true and categoria.id = " . $id_categoria;
+        $query = "SELECT id,nombre, nombre_descripcion, key_nombre, descripcion FROM " . self::$table . " WHERE key_nombre = '" . $name . "' and active = true";
 
         if (!$result = $this->query($query)) {
             return false;
