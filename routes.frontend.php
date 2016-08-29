@@ -10,15 +10,15 @@ $app->get('/', function() use ($app) {
     $app->render('index.php');
 });
 
-$app->get('/faq', function() use ($app) {
+$app->get('/preguntas-frecuentes', function() use ($app) {
     $app->render('faq.php');
 });
 
-$app->get('/about', function() use ($app) {
+$app->get('/acerca', function() use ($app) {
     $app->render('about.php');
 });
 
-$app->get('/contact', function() use ($app) {
+$app->get('/contacto', function() use ($app) {
     $app->render('contact.php');
 });
 
@@ -32,4 +32,8 @@ $app->get('/partnerships', function() use ($app) {
 
 $app->get('/:category', function() use ($app) {
     $app->render('categoria.php');
+});
+
+$app->get('/:category/:product', function() use ($app) {
+    $app->render('producto.php');
 });

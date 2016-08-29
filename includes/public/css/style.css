@@ -85,7 +85,7 @@ utf-8
     background: #000;
     margin: 0;
     padding: 0;
-    height: 235px
+    height: 50px
 }
 
 #mainSlider {
@@ -208,7 +208,7 @@ utf-8
 }
 
 #navcontainer ul li a {
-    width: 110px;
+    width: 140px;
     height: 69px;
     padding: 20px 0 0;
     margin: 0;

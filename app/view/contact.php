@@ -3,26 +3,26 @@
 
         <div id="messages_product_view"></div>
         <div class="page-title">
-            <h1>Contact Us</h1>
+            <h1>Contáctanos</h1>
         </div>
         <div id="contactMain">
             <div id="contForm">
                 <div id="left">
                     <form id="contactForm" class="scaffold-form" method="post"
-                          action="http://www.element119.com/contacts/index/post/">
+                          action="">
                         <div class="fieldset">
-                            <p class="txtPage">Ask a question, suggest a partnership, or request a quote below.</p>
+                            <p class="txtPage">Contáctanos</p>
                             <ul class="form-list">
                                 <li style="width:45%;float:left;margin-bottom:0px">
                                     <div class="field">
                                         <label for="name">
                                             <em>*</em>
-                                            Name
+                                            Nombre
                                         </label>
 
                                         <div class="input-box">
                                             <input id="name" class="input-text required-entry" type="text" value=""
-                                                   title="Name" name="name">
+                                                   title="Nombre" name="nombre">
                                         </div>
                                     </div>
                                     <div class="field">
@@ -40,15 +40,15 @@
                                 </li>
                                 <li style="width:45%;float:right;margin-right:20px;margin-bottom:0px">
                                     <div class="field">
-                                        <label for="company">Company Name</label>
+                                        <label for="company">Compañía</label>
 
                                         <div class="input-box">
                                             <input id="company" class="input-text" type="text" value=""
-                                                   title="Company Name" name="company">
+                                                   title="Compañía" name="company">
                                         </div>
                                     </div>
                                     <div class="field">
-                                        <label for="website">Company Website</label>
+                                        <label for="website">Sitio Web</label>
 
                                         <div class="input-box">
                                             <input id="website" class="input-text" type="text" value=""
@@ -60,11 +60,12 @@
                                     <div class="field">
                                         <label for="country">
                                             <em>*</em>
-                                            Country
+                                            País
                                         </label>
 
                                         <div class="input-box">
                                             <select id="country" name="country">
+                                                <option value="MX" selected="selected"> México</option>
                                                 <option value="US">United States</option>
                                                 <option value="AF"> Afghanistan</option>
                                                 <option value="AX"> Åland Islands</option>
@@ -205,7 +206,7 @@
                                                 <option value="MR"> Mauritania</option>
                                                 <option value="MU"> Mauritius</option>
                                                 <option value="YT"> Mayotte</option>
-                                                <option value="MX"> Mexico</option>
+
                                                 <option value="FM"> Micronesia</option>
                                                 <option value="MD"> Moldova</option>
                                                 <option value="MC"> Monaco</option>
@@ -317,7 +318,7 @@
                                     </div>
                                     <label for="comment">
                                         <em>*</em>
-                                        Comments
+                                        Comentarios
                                     </label>
 
                                     <div class="input-box">
@@ -329,9 +330,9 @@
                         </div>
                         <div class="buttons-set" style="border-top: medium none;">
                             <input id="hideit" type="text" style="display:none !important;" value="" name="hideit">
-                            <button class="button" title="Send" type="submit">
+                            <button class="button" title="Enviar" type="submit">
             <span>
-             <span>Send</span>
+             <span>Enviar</span>
                          </span>
                             </button>
                         </div>

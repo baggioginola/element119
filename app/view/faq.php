@@ -3,11 +3,11 @@
         <div class="breadcrumbs">
             <ul>
                 <li class="home">
-                    <a title="Go to Home Page" href="http://www.element119.com/">Home</a>
+                    <a title="Inicio" href="<?php echo DOMAIN; ?>">Inicio</a>
                     <span>/ </span>
                 </li>
                 <li class="cms_page">
-                    <strong>Freqently Asked Questions</strong>
+                    <strong>Preguntas más frecuentes</strong>
                 </li>
             </ul>
         </div>
@@ -20,105 +20,107 @@
                         <div class="col-main">
                             <div class="std">
                                 <div id="page-title">
-                                    <h1>Paint Sealant and Ceramic Paint Protection FAQ</h1>
+                                    <h1>Protección de Pintura FAQ</h1>
                                 </div>
                                 <p class="similiLabel">
                                     <strong>
-                                        System X Ceramic Paint Sealant
+                                        Sellador de pintura de cerámica
                                         <br>
                                     </strong>
                                 </p>
                                 <ul class="disc">
                                     <li class="similiLabel">
-                                        <a href="#answer100">What is the difference between System X PRO and Diamond
+                                        <a href="#answer100">¿Cuál es la diferencia entre el sistema X PRO y Diamond
                                             Hardcoat?</a>
                                     </li>
                                     <li class="similiLabel">
-                                        <a href="#answer101">Is the coating really permanent?</a>
+                                        <a href="#answer101">¿La capa es realmente permanente?</a>
                                     </li>
                                     <li class="similiLabel">
-                                        <a href="#answer102">What areas can be treated with the System X?</a>
+                                        <a href="#answer102">¿Qué zonas se pueden tratar con el sistema X?</a>
                                     </li>
                                     <li class="similiLabel">
-                                        <a href="#answer103">What is the advantage of System X over polyurethane clear
-                                            coats?</a>
+                                        <a href="#answer103">¿Cuál es la ventaja del Sistema X sobre las capas
+                                            transparentes de poliuretano?</a>
                                     </li>
                                     <li class="similiLabel">
-                                        <a href="#answer104">Do I need a special car wash/soap to wash the vehicle after
-                                            application?</a>
+                                        <a href="#answer104">¿Es necesario un lavado de coches / jabón especial para
+                                            lavar el vehículo después de la aplicación?</a>
                                     </li>
                                     <li class="similiLabel">
-                                        <a href="#answer150">What happens if I miss a spot while applying System X?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer151">What if I let the product over dry?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer105">Can I wax or seal over System X?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer106">How quickly do I need to remove bird droppings?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer107">Why does it seem like the water repellency has decreased
-                                            over time?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer108">What is the correct procedure when applying System X to
-                                            painted surfaces?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer109">Can I apply System X to bare rubber moldings?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer110">What must be removed from the exterior paint prior to
-                                            application?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer111">Can I apply System X over decals, emblems, etc.?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer112">Should I apply System X to the entire exterior of the
-                                            vehicle at once then allow it to dry?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer113">Do I need a special car wash/soap to wash the vehicle prior
-                                            to application?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer114">Should I attempt to “level” System X while it is
-                                            evaporating?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer115">How long does System X take to cure?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer116">Can System X be applied using a pneumatic spray gun?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer117">How can I remove System X after it has cured?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer118">Can System X be used on carbon fiber?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer119">Is System X safe to apply to chrome pipes and mufflers?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer120">Will System X prevent heat bluing on the exhaust?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer122">Why does your package say "User accepts full responsibility
-                                            for any application issues”?</a>
-                                    </li>
-                                    <li class="similiLabel">
-                                        <a href="#answer123">What kind of safety equipment should be used when applying
+                                        <a href="#answer150">¿Qué pasa si me olvido de una mancha mientras se aplica
                                             System X?</a>
                                     </li>
                                     <li class="similiLabel">
-                                        <strong>
-                                            <a href="#answer121">How much System X do I need?</a>
-                                        </strong>
+                                        <a href="#answer151">¿Qué pasa si dejo que el producto más seco?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer105">¿Puedo encerar o sellar sobre System X?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer106">¿Cuánto tiempo necesito para eliminar los excrementos de
+                                            pájaros?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer107">¿Por qué parece que la repelencia al agua ha disminuido con
+                                            el tiempo?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer108">¿Cuál es el procedimiento correcto para la aplicación del
+                                            Sistema X a las superficies pintadas?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer109">¿Puedo solicitar Sistema X para desnudar molduras de
+                                            goma?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer110">Lo que se debe quitar de la pintura exterior antes de la
+                                            aplicación?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer111">¿Puedo aplicar Sistema X sobre las calcomanías, emblemas,
+                                            etc.?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer112">¿Debo aplicar Sistema X para todo el exterior del vehículo
+                                            a la vez y luego deje que se seque?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer113">¿Es necesario un lavado de coches / jabón especial para
+                                            lavar el vehículo antes de la aplicación?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer114">Debería tratar de "nivelal" Sistema X mientras se está
+                                            evaporando?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer115">¿Cuánto tiempo toma para curar Sistema X?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer116">¿Sistema X puede ser aplicado con pistola neumática?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer117">¿Cómo puedo eliminar System X después de que se ha
+                                            curado?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer118">Sistema X puede ser usado en fibra de carbono?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer119">Sistema X es seguro para aplicarse a tuberías de cromo y
+                                            silenciadores?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer120">Sistema X será prevenir azulado de calor en los gases de
+                                            escape?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer122">¿Por qué dice su paquete de "usuario acepta toda la
+                                            responsabilidad por problemas de aplicación"?</a>
+                                    </li>
+                                    <li class="similiLabel">
+                                        <a href="#answer123">¿Qué tipo de equipo de seguridad se debe utilizar cuando se
+                                            aplica System X?</a>
                                     </li>
                                 </ul>
                                 <p class="txtPage"></p>
@@ -128,247 +130,265 @@
                                 </div>
                                 <p class="txtPage">
                                     <a name="answer100"></a>
-                                    <strong>What is the difference between System X PRO and Diamond Hardcoat?</strong>
+                                    <strong>¿Cuál es la diferencia entre el sistema X PRO y Diamond Hardcoat?</strong>
                                 </p>
 
                                 <p class="txtPage">
-                                    System X PRO provides a high gloss, this is our most popular coating. Diamond
-                                    Hardcoat does not provide as much gloss, but will last longer than PRO and is easily
-                                    layered. Diamond Hardcoat is great for marine applications, around aircraft exhaust
-                                    ports, and bare metal applications like stainless steel. If you desire both the
-                                    added protection of Diamond Hardcoat and the high gloss of PRO you can apply Diamond
-                                    Hardcoat as a basecoat first, then after 30 minutes of drying apply a layer of PRO.
-                                    Both these products provide outstanding protection and are only sold by the case to
-                                    authorized Jobbers, Distributors and Import/Exporters. If you would like to use
-                                    System X in your business fill out our
-                                    <a href="/customer/account/create/">Account Setup Form</a>
-                                    or request an account authorization with our
-                                    <a href="/contacts">Contact Form</a>
+                                    Sistema X PRO proporciona un alto brillo, este es nuestro revestimiento más popular.
+                                    Diamond Hardcoat no proporciona la mayor cantidad de brillo, pero durará más tiempo
+                                    que PRO y es fácilmente capas. Diamond Hardcoat es ideal para aplicaciones marinas,
+                                    alrededor de los orificios de escape de aviones, y aplicaciones de metal desnudo
+                                    como el acero inoxidable. Si usted desea tanto la protección adicional de diamante
+                                    Hardcoat y el alto brillo de PRO se puede aplicar diamante Hardcoat como primera
+                                    capa en primer lugar, a continuación, después de 30 minutos de secado aplicar una
+                                    capa de PRO. Ambos estos productos proporcionan una protección excepcional y sólo se
+                                    venden por el caso de intermediarios autorizados, Distribuidores y de importación /
+                                    exportadores. Si desea utilizar el sistema X en su negocio rellenar nuestro
+                                    <a href="#">formulario de configuración de la cuenta </a>
+                                    o solicitar una autorización cuenta con nuestro
+                                    <a href="#">Formulario de contacto .</a>
                                     .
                                 </p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer101"></a>
-                                    <strong>Is the coating really permanent?</strong>
+                                    <strong>¿La capa es realmente permanente?</strong>
                                 </p>
 
-                                <p class="txtPage">Yes, System X Resin should be thought of as adding another clear coat
-                                    to the paints surface. This new clear coat is glossier, chemical resistant, and
-                                    harder than the original clear coat. System X is a permanent coating in the same
-                                    sense that the clear coat on your car is permanent. Eventually the clear coat will
-                                    wear away over the years; its overall longevity depends on conditions and proper
-                                    application.</p>
+                                <p class="txtPage">Sí, Sistema X resina debe ser pensado como la adición de otra capa
+                                    transparente a la superficie de las pinturas. Esta nueva capa transparente es más
+                                    brillante, resistente a productos químicos, y más duro que la capa transparente
+                                    originales. Sistema X es un recubrimiento permanente en el mismo sentido que la capa
+                                    transparente en su coche es permanente. Eventualmente, la capa transparente se
+                                    desgasta lo largo de los años; su longevidad en general depende de las condiciones y
+                                    la correcta aplicación.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer102"></a>
-                                    <strong>What areas can be treated with the System X?</strong>
+                                    <strong>¿Qué zonas se pueden tratar con el sistema X?</strong>
                                 </p>
 
-                                <p class="txtPage">All exterior surfaces including paint, metal, stainless steel,
-                                    chrome, gel coat, plastic composites, exhaust and wheels. Do not use System X on
-                                    rubber or soft plastics. System X GLASS is formulated for windshields, windscreens,
-                                    windows, mirrors, and glass headlamps.</p>
+                                <p class="txtPage">Todas las superficies exteriores, incluyendo pintura, metal, acero
+                                    inoxidable, cromo, capa de gel, compuestos de plástico, tubo de escape y ruedas. No
+                                    utilice System X de caucho o plástico blando. Sistema X VIDRIO está formulado para
+                                    parabrisas, parabrisas, ventanas, espejos y faros de vidrio.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer103"></a>
-                                    <strong>What is the advantage of System X over polyurethane clear coats that already
-                                        provide significant gloss and color retention of the base topcoat?</strong>
+                                    <strong¿Cuál es la ventaja del Sistema X sobre las capas transparentes de
+                                    poliuretano que ya proporcionan significativa brillo y retención del color de la
+                                    capa de acabado de base?</strong>
                                 </p>
 
-                                <p class="txtPage">System X provides additional gloss and protection over clear coats.
-                                    The ceramic resin bonded coating helps contaminants slide off easily, which give
-                                    them less time to eat into the surface. An added plus is the ease of cleaning your
-                                    vehicle. An easy way to think of it would be that System X is the equivalent of
-                                    another, harder and glossier clear coat layer.</p>
+                                <p class="txtPage">Sistema X proporciona brillo y más protección que las capas
+                                    transparentes. El recubrimiento de resina en condiciones de servidumbre de cerámica
+                                    ayuda a contaminantes deslizar fácilmente, lo que les dará menos tiempo para comer
+                                    en la superficie. Una ventaja añadida es la facilidad de la limpieza de su vehículo.
+                                    Una manera fácil de pensar que sería que el Sistema X es el equivalente de otro, más
+                                    duro y más brillante clara capa de recubrimiento.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer104"></a>
-                                    <strong>Do I need a special car wash/soap to wash the vehicle after
-                                        application?</strong>
+                                    <strong>¿Es necesario un lavado de coches / jabón especial para lavar el vehículo
+                                        después de la aplicación?</strong>
                                 </p>
 
-                                <p class="txtPage">No special washing, soap, or shampoo is required. Using an automated
-                                    car wash is fine as well.</p>
+                                <p class="txtPage">No se requiere ninguna especial de lavado, jabón, o champú. El uso de
+                                    un lavado de coches automático está muy bien también.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer105"></a>
-                                    <strong>Can I wax or seal over System X?</strong>
+                                    <strong>¿Puedo cera o sellar sobre System X?</strong>
                                 </p>
 
-                                <p class="txtPage">Yes, if desired waxing and sealing over System X won’t damage the
-                                    coating. Let System X coating cure for at least 3 days before applying another
-                                    product.</p>
+                                <p class="txtPage">Sí, si se desea encerar y sellado sobre Sistema X no dañar el
+                                    revestimiento. Deje Sistema X curación del recubrimiento durante al menos 3 días
+                                    antes de aplicar otro producto.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer106"></a>
-                                    <strong>How quickly do I need to remove bird droppings?</strong>
+                                    <strong>¿En cuánto tiempo necesito para eliminar los excrementos de
+                                        pájaros?</strong>
                                 </p>
 
-                                <p class="txtPage">Remove bird waste as soon as possible. Saturate the dropping and wipe
-                                    off. Avoid scraping.</p>
+                                <p class="txtPage">Eliminar los desechos de aves tan pronto como sea posible. Saturar el
+                                    goteo y se limpie. No rayarlos.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer107"></a>
-                                    <strong>Why does it seem that the water repellency has decreased over time?</strong>
+                                    <strong>¿Por qué parece que la repelencia al agua ha disminuido con el
+                                        tiempo?</strong>
                                 </p>
 
-                                <p class="txtPage">This will happen over time due to eventual buildup of contaminants
-                                    (like every other coating). Just clean the surface with a mild cleaner and wash off
-                                    thoroughly with water. The hydrophobic effect is then reproduced.</p>
+                                <p class="txtPage">Esto ocurrirá con el tiempo debido a una eventual acumulación de
+                                    contaminantes (como cualquier otro tipo de revestimiento). Sólo limpiar la
+                                    superficie con un limpiador suave y lavar a fondo con agua. a continuación, se
+                                    reproduce el efecto hidrófobo.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer108"></a>
-                                    <strong>What is the correct procedure when applying System X to painted
-                                        surfaces?</strong>
+                                    <strong>¿Cuál es el procedimiento correcto para la aplicación del Sistema X a las
+                                        superficies pintadas?</strong>
                                 </p>
 
                                 <p class="txtPage">
-                                    Wash the surface then completely dry, pour small amount of System X onto applicator
-                                    pad or cotton round, cover entire panel with a thin coating, allow to dry for 2-3
-                                    minutes, finish buff with a dry microfiber towel. You can view a detailed
-                                    explanation in our
-                                    <a href="/pdf/SystemXApplication.pdf">System X Application Pdf</a>
+                                    Lave la superficie a continuación, completamente seco, vierta una pequeña cantidad
+                                    de Sistema X en la almohadilla de aplicador o redondo de algodón, cubrir todo el
+                                    panel con una capa fina, dejar secar durante 2-3 minutos, piel de ante de meta con
+                                    una toalla de microfibra seco. Puede ver una explicación detallada
+                                    <a href="#">en nuestro
+                                        sistema X solicitud en formato PDF</a>
                                 </p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer109"></a>
-                                    <strong>Can I apply System X to bare rubber moldings?</strong>
+                                    <strong>¿Puedo solicitar Sistema X para desnudar molduras de goma?</strong>
                                 </p>
 
-                                <p class="txtPage">System X Resin or Pre-Clean should not be used on rubber moldings or
-                                    rubber seals.</p>
+                                <p class="txtPage">X Resina sistema o Pre-Clean no se deben utilizar en las molduras de
+                                    goma o las juntas de goma.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer110"></a>
-                                    <strong>What must be removed from the exterior paint prior to application?</strong>
+                                    <strong>Lo que se debe quitar de la pintura exterior antes de la
+                                        aplicación?</strong>
                                 </p>
 
-                                <p class="txtPage">Transit wrap, tape or glue lines, bug residue, road tar, and any
-                                    other contaminants. All polishing must be done prior to application. Use the System
-                                    X Pre-Cleaner or an equivalent prep-solvent to remove these residues.</p>
+                                <p class="txtPage"> envoltura de tránsito, cinta adhesiva o pegamento líneas, residuos
+                                    de
+                                    insectos, alquitrán, y cualquier otro contaminante. Todo el pulido se debe hacer
+                                    antes de la aplicación. Utilizar el sistema X Pre-limpiador o un prep-disolvente
+                                    para
+                                    eliminar estos residuos equivalente.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer111"></a>
-                                    <strong>Can I apply System X over decals, emblems, etc.?</strong>
+                                    <strong>¿Puedo aplicar Sistema X sobre las calcomanías, emblemas, etc.?</strong>
                                 </p>
 
-                                <p class="txtPage">System X can be applied over any factory decals and will add gloss to
-                                    your emblems.</p>
+                                <p class="txtPage">Sistema X se puede aplicar sobre cualquier calcomanía de fábrica y
+                                    añadirá brillo a sus emblemas.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer112"></a>
-                                    <strong>Should I apply System X to the entire exterior of the vehicle at once then
-                                        allow it to dry?</strong>
+                                    <strong>¿Debo solicitar Sistema X para todo el exterior del vehículo a la vez y
+                                        luego deje que se seque?</strong>
                                 </p>
 
-                                <p class="txtPage">Application of System X should be done on a single panel at a time
-                                    (e.g. hood, fender, trunk) ensuring complete coverage and reducing the possibility
-                                    of letting the product dry too long.</p>
+                                <p class="txtPage">Aplicación del Sistema X se debe hacer en un solo panel a la vez (por
+                                    ejemplo, capó, guardabarros, tronco) asegurar una cobertura completa y reducir la
+                                    posibilidad de dejar que el producto se seque demasiado tiempo.
+                                </p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer113"></a>
-                                    <strong>Do I need a special car wash/soap to wash the vehicle prior to
-                                        application?</strong>
+                                    <strong>¿Es necesario un lavado de coches / jabón especial para lavar el vehículo
+                                        antes de la aplicación?</strong>
                                 </p>
 
-                                <p class="txtPage">No special washing detergent is needed, though we suggest a washing
-                                    with DAWN dish detergent. Any additional residue will be removed with System X
-                                    Pre-Clean Solution, or similar surface prep/silicone and wax removing product.</p>
+                                <p class="txtPage">No se necesita ningún detergente de lavado especial, aunque se
+                                    aconseja un lavado con detergente para lavar platos Dawn. Cualquier residuo
+                                    adicional se elimina con System Solution X Pre-Clean, o una superficie similar de
+                                    preparación / silicona y cera de eliminación del producto.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer114"></a>
-                                    <strong>Should I attempt to “level” System X while it is evaporating?</strong>
+                                    <strong>Debería tratar de "nivel" Sistema X mientras se está evaporando?</strong>
                                 </p>
 
-                                <p class="txtPage">System X will level itself. No additional leveling is needed during
-                                    evaporation.</p>
+                                <p class="txtPage">Sistema X se nivelará sí mismo. No se necesita una nivelación
+                                    adicional durante la evaporación.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer150"></a>
-                                    <strong>What happens if I miss a spot while applying System X?</strong>
+                                    <strong>¿Qué pasa si me olvido de una mancha mientras se aplica System X?</strong>
                                 </p>
 
-                                <p class="txtPage">Missed spots can be fixed easily. Just apply more System X to the
-                                    missed area that was missed, then buff off. System X will level itself with the
-                                    previously treated surface on its own.</p>
+                                <p class="txtPage">manchas perdidas se pueden resolver fácilmente. Basta con aplicar más
+                                    System X de la zona perdida que se perdió, luego pula fuera. Sistema X se nivelará
+                                    sí mismo con la superficie tratada previamente por su cuenta.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer151"></a>
-                                    <strong>What if I let the product over dry?</strong>
+                                    <strong>¿Qué pasa si dejo que el producto más seco?</strong>
                                 </p>
 
-                                <p class="txtPage">If you let a spot over dry you have two options: If you applied it in
-                                    the last hour or two, just reapply System X to the over dried section then buff it
-                                    off right away. If more then 2 hours has past you need to get out the buffing
-                                    compound and remove the over dried area by polishing.</p>
+                                <p class="txtPage">Si deja que un punto más seco tiene dos opciones: Si ha aplicado en
+                                    la última hora o dos, simplemente vuelva a aplicar Sistema X a la sección más seca
+                                    luego pula el área inmediatamente. Si hay más de 2 horas ha pasado que necesita para
+                                    obtener el compuesto de pulir y eliminar el área seca sobre puliendo.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer115"></a>
-                                    <strong>How long does System X take to cure?</strong>
+                                    <strong>¿Cuánto tiempo toma para curar Sistema X?</strong>
                                 </p>
 
-                                <p class="txtPage">System X will be dry to touch within 15 minutes, at which point the
-                                    vehicle is ready to drive/use. Over the next 3 days System X will continue to become
-                                    harder until the surface reaches 3 GPa+ hardness.</p>
+                                <p class="txtPage">Sistema X estará seca al tacto en 15 minutos, momento en el que el
+                                    vehículo está listo para conducir / uso. Durante el próximo 3 días Sistema X
+                                    continuarán siendo cada vez más fuerte hasta que la superficie alcanza los 3 GPa +
+                                    dureza.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer116"></a>
-                                    <strong>Can System X be applied using a pneumatic spray gun?</strong>
+                                    <strong>Sistema X puede ser aplicado con pistola neumática?</strong>
                                 </p>
 
-                                <p class="txtPage">Yes, System X can be applied using a pneumatic spray gun, however it
-                                    also uses excessive amount of product. The cured System X product is thick enough to
-                                    protect the paintwork when hand applied.</p>
+                                <p class="txtPage">Sí, Sistema de X se puede aplicar con una pistola de pulverización
+                                    neumática, sin embargo, también utiliza una cantidad excesiva de producto. El
+                                    producto X Sistema de curado es lo suficientemente gruesa para proteger la pintura
+                                    cuando se aplica la mano.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer117"></a>
-                                    <strong>How can I remove System X after it has cured?</strong>
+                                    <strong>¿Cómo puedo eliminar System X después de que se ha curado?</strong>
                                 </p>
 
-                                <p class="txtPage">After the coating has cured, it can only be removed by polishing
-                                    (compounding) or wet sanding.</p>
+                                <p class="txtPage">Después de que el recubrimiento ha curado, sólo puede ser eliminado
+                                    por pulido (compuesto) o lijado en húmedo.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer118"></a>
-                                    <strong>Can System X be used on carbon fiber?</strong>
+                                    <strong>Sistema X puede ser usado en fibra de carbono?</strong>
                                 </p>
 
-                                <p class="txtPage">Yes, you may apply System X to carbon fiber shields, panels, and
-                                    parts.</p>
+                                <p class="txtPage">Sí, puede aplicar Sistema X a los escudos de fibra de carbono, los
+                                    paneles y piezas.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer119"></a>
-                                    <strong>Is System X safe to apply to chrome pipes and mufflers?</strong>
+                                    <strong>Sistema X es seguro para aplicarse a tuberías de cromo y
+                                        silenciadores?</strong>
                                 </p>
 
-                                <p class="txtPage">Yes, the product is safe to apply to car, truck, and motorcycle
-                                    mufflers and pipes. System X withstands temperatures over 1000 degrees.</p>
+                                <p class="txtPage">Sí, el producto es seguro para aplicar a coches, camiones,
+                                    motocicletas y silenciadores y tubos. Sistema X soporta temperaturas de más de 1000
+                                    grados.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer120"></a>
-                                    <strong>Will System X prevent heat bluing on the exhaust?</strong>
+                                    <strong>Sistema X será prevenir azulado de calor en los gases de escape?</strong>
                                 </p>
 
                                 <p class="txtPage">No.</p>
@@ -376,50 +396,50 @@
 
                                 <p class="txtPage">
                                     <a name="answer122"></a>
-                                    <strong>Why does your package say "User accepts full responsibility for any
-                                        application issues”?</strong>
+                                    <strong>¿Por qué dice su paquete de "usuario acepta toda la responsabilidad por
+                                        problemas de aplicación"?</strong>
                                 </p>
 
-                                <p class="txtPage">While System X is easy to apply, attention must be paid to follow
-                                    directions properly and wipe down the evaporated surface within the specified
-                                    timeframe. Always test an inconspicuous area first.</p>
+                                <p class="txtPage">Mientras Sistema X es fácil de aplicar, se debe prestar atención para
+                                    seguir las instrucciones correctamente y limpie la superficie evaporada dentro del
+                                    plazo especificado. Pruebe siempre una zona poco visible.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer123"></a>
-                                    <strong>What kind of safety equipment should be used when applying System
+                                    <strong>¿Qué tipo de equipo de seguridad se debe utilizar cuando se aplica System
                                         X?</strong>
                                 </p>
 
-                                <p class="txtPage">Nitrile gloves should be worn. A respirator is recommended for
-                                    applications in closed and poorly ventilated areas.</p>
+                                <p class="txtPage">Los guantes de nitrilo deben ser usados. Un respirador se recomienda
+                                    para aplicaciones en los recintos cerrados y mal ventilados.</p>
                                 <br>
 
                                 <p class="txtPage">
                                     <a name="answer121"></a>
-                                    <strong>How much System X do I need?</strong>
+                                    <strong>¿Cuánto sistema X necesito?</strong>
                                 </p>
 
-                                <p class="txtPage"> We recommend the following coverage for the best results. While we
-                                    do have customers that stretch the coverage up to 200%, we do not recommend doing
-                                    so. We think every application should be carried out to achieve the greatest
-                                    performance. Remember, if you have extra product you can apply a second coat to
-                                    horizontal surfaces, surfaces near the water line, and areas near exhaust
-                                    ports. </p>
+                                <p class="txtPage"> Recomendamos la siguiente cobertura para los mejores resultados.
+                                    Aunque tenemos clientes que se extienden la cobertura hasta el 200%, no recomendamos
+                                    hacerlo. Creemos que cada aplicación debe llevarse a cabo para lograr el mayor
+                                    rendimiento. Recuerde, si usted tiene un producto adicional se puede aplicar una
+                                    segunda capa para superficies horizontales, superficies cerca de la línea de agua, y
+                                    las áreas cercanas a los puertos de escape. </p>
 
                                 <p class="txtPage">
-                                    System X covers approx. 230 sq. feet per 100ml. See below for more detail.
+                                    Sistema X cubre aprox. 230 pies cuad. Por 100 ml. Véase más abajo para obtener más detalles.
                                     <br>
-                                    65ml bottle = 150 sq. ft. coverage
+                                    Botella de 65 ml = 150 sq. Ft. Cobertura
                                     <br>
-                                    325ml bottle = 745 sq. ft. coverage
+                                    botella de 325ml = 745 sq. Ft. Cobertura
                                 </p>
 
                                 <table border="1">
                                     <tbody>
                                     <tr>
-                                        <th>Model / Size</th>
-                                        <th>Suggested Quantity of System X</th>
+                                        <th>Modelo / Tamaño</th>
+                                        <th>Cantidad sugerida de Sistema X</th>
                                     </tr>
                                     <tr></tr>
                                     <tr>
@@ -433,7 +453,7 @@
                                                 <br>
                                             </p>
                                         </td>
-                                        <td>One 65ml bottle of System X</td>
+                                        <td>Una botella de 65 ml de sistema X</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -441,14 +461,14 @@
                                 <br>
 
                                 <p class="txtPage">
-                                    <strong>Ship / Boat / Vessel</strong>
+                                    <strong>Barco</strong>
                                     <br>
                                 </p>
                                 <table border="1">
                                     <tbody>
                                     <tr>
-                                        <th>Model / Size</th>
-                                        <th>Suggested Quantity of System X</th>
+                                        <th>Modelo / Tamaño</th>
+                                        <th>Cantidad sugerida de Sistema X</th>
                                     </tr>
                                     <tr></tr>
                                     <tr>
@@ -464,44 +484,44 @@
                                             <em>MasterCraft 300</em>
                                             <br>
                                         </td>
-                                        <td>One 325ml bottle of System X</td>
+                                        <td>Una botella de 325ml de Sistema X</td>
                                     </tr>
                                     <tr>
                                         <td style="width:33%">
                                             <em>25-35' Vessel</em>
                                         </td>
-                                        <td>Two 325ml bottles of System X</td>
+                                        <td>Dos botellas de 325ml de Sistema X</td>
                                     </tr>
                                     </tbody>
                                 </table>
                                 <em>
-                                    * calculate how much you will need :
-                                    <strong>Length of waterline in ft.</strong>
+                                    * Calcular cuánto se necesita:  = Pies cuadrados.
+                                    <strong>Duración de la línea de flotación en ft.</strong>
                                     x
-                                    <strong>(breadth + depth) in ft.</strong>
-                                    = square ft.
+                                    <strong>(ancho + profundidad) en Ft.</strong>
+                                    = Pies cuadrados.
                                 </em>
                                 <br>
                                 <br>
 
                                 <p class="txtPage">
-                                    <strong>Aircraft</strong>
+                                    <strong>Aeronave</strong>
                                 </p>
                                 <table border="1">
                                     <tbody>
                                     <tr>
-                                        <th>Model / Size</th>
-                                        <th>Suggested Quantity of System X</th>
+                                        <th>Modelo / Tamaño</th>
+                                        <th>Cantidad sugerida de Sistema X</th>
                                     </tr>
                                     <tr></tr>
                                     <tr>
                                         <td style="width:33%">
-                                            <em>Single Engine</em>
+                                            <em>De un solo motor</em>
                                             <br>
-                                            <em>Cabin Class Twin</em>
+                                            <em>Clase turista Doble</em>
                                             <br>
                                         </td>
-                                        <td>Two 325ml bottles of System X</td>
+                                        <td>Dos botellas de 325ml de Sistema X</td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -516,7 +536,7 @@
                                             <em>Lear 25</em>
                                             <br>
                                         </td>
-                                        <td>Three 325ml bottles of System X</td>
+                                        <td>Tres botellas de 325ml de Sistema X</td>
                                     </tr>
                                     <tr>
                                         <td style="width:33%">
@@ -526,9 +546,7 @@
                                             <br>
                                         </td>
                                         <td>
-                                            Ten 325ml bottles of System X.
-                                            <a href="/contacts">Contact us</a>
-                                            for case discount.
+                                            Diez botellas de 325ml de Sistema X
                                         </td>
                                     </tr>
                                     </tbody>
@@ -537,24 +555,24 @@
                                 <br>
 
                                 <p class="txtPage">
-                                    <strong>Motorcycles</strong>
+                                    <strong>Motocicletas</strong>
                                 </p>
                                 <table border="1">
                                     <tbody>
                                     <tr>
-                                        <th>Model / Size</th>
-                                        <th>Suggested Quantity of System X</th>
+                                        <th>Modelo / Tamaño</th>
+                                        <th>Cantidad sugerida de Sistema X</th>
                                     </tr>
                                     <tr></tr>
                                     <tr>
                                         <td style="width:33%">
                                             <em>
-                                                Motorcycle
+                                                Motocicleta
                                                 <br>
-                                                Motorcycle with sidecar
+                                                Motocicleta  con sidecar
                                             </em>
                                         </td>
-                                        <td>.25 - 1 x 65ml bottle of System X</td>
+                                        <td>.25 - 1 x botella de 65 ml de sistema X</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -564,8 +582,8 @@
                                 <table border="1">
                                     <tbody>
                                     <tr>
-                                        <th>Model / Size</th>
-                                        <th>Suggested Quantity of System X</th>
+                                        <th>Modelo / Tamaño</th>
+                                        <th>Cantidad sugerida de Sistema X</th>
                                     </tr>
                                     <tr></tr>
                                     <tr>
@@ -580,147 +598,23 @@
                                             <br>
                                             Dutch Star, 44'
                                         </td>
-                                        <td>Two 325ml bottles of System X</td>
+                                        <td>Dos botellas de 325ml de Sistema X</td>
                                     </tr>
                                     <tr>
                                         <td style="width:33%">
                                             <em>< 750 sq. ft.</em>
                                             <br>
-                                            Class B & C Motorhomes
+                                            Clase B & C Motorhomes
                                         </td>
-                                        <td>One 325ml bottle of System X</td>
+                                        <td>Una botella de 325ml de Sistema X</td>
                                     </tr>
                                     </tbody>
                                 </table>
-                                <br>
-                                <br>
-
-                                <p class="txtPage">
-                                    <strong>Trucks and Trailers</strong>
-                                </p>
-                                <table border="1">
-                                    <tbody>
-                                    <tr>
-                                        <th>Model / Size</th>
-                                        <th>Suggested Quantity of System X</th>
-                                    </tr>
-                                    <tr></tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            <em>< 750 sq. ft.</em>
-                                            <br>
-                                            24 - 26' Box Truck
-                                            <br>
-                                            *not including box roof
-                                        </td>
-                                        <td>One 325ml bottle of System X</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            24 - 35' Box Truck
-                                            <br>
-                                            *including box roof
-                                        </td>
-                                        <td>Two 325ml bottles of System X</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            <em>< 750 sq. ft.</em>
-                                            <br>
-                                            Semi-trailer truck
-                                            <br>
-                                            *including air dam, tanks, wheels and exhaust
-                                            <br>
-                                            <br>
-                                            Semi-trailer truck
-                                            <br>
-                                            *including air dam, tanks, wheels, exhaust and sleeper
-                                        </td>
-                                        <td>One 325ml bottle of System X</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            28' cube trailer
-                                            <br>
-                                            *roof not included
-                                        </td>
-                                        <td>One 325ml bottle of System X</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            28' cube trailer
-                                            <br>
-                                            *including roof and wheels
-                                        </td>
-                                        <td>One - Two 325ml bottles of System X</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            45' cube trailer
-                                            <br>
-                                            *including roof and wheels
-                                        </td>
-                                        <td>Two 325ml bottles of System X</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            53' cube trailer
-                                            <br>
-                                            *roof not included
-                                        </td>
-                                        <td>Two 325ml bottles of System X</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            53' cube trailer
-                                            <br>
-                                            *including roof and wheels
-                                        </td>
-                                        <td>Three 325ml bottles of System X</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <br>
-                                <br>
-
-                                <p class="txtPage">
-                                    <strong>Fire and EMS</strong>
-                                </p>
-                                <table border="1">
-                                    <tbody>
-                                    <tr>
-                                        <th>Model / Size</th>
-                                        <th>Suggested Quantity of System X</th>
-                                    </tr>
-                                    <tr></tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            <em>45' Long Aerial Ladder Truck</em>
-                                            <br>
-                                        </td>
-                                        <td>Two 325ml bottles of System X</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            <em>28' Pump Truck</em>
-                                            <br>
-                                        </td>
-                                        <td>One 325ml bottle of System X</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:33%">
-                                            <em>19' E-350 Van Ambulance</em>
-                                            <br>
-                                            <em>19' F-350 / 450 / 550 Ambulance</em>
-                                            <br>
-                                        </td>
-                                        <td>One 325ml bottle of System X</td>
-                                    </tr>
                                     </tbody>
                                 </table>
                                 <p>
-                                    <a href="/contacts">Contact us</a>
-                                    if you need help calculating how much product you need.
+                                    <a href="<?php echo DOMAIN; ?>contacto">Contáctanos</a>
+                                    si necesita ayuda calculando cuanto producto necesita
                                 </p>
                             </div>
                         </div>

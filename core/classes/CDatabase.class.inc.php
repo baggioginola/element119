@@ -79,10 +79,7 @@ class Database
         }
 
         $result = mysqli_query($this->link, $query);
-
-        $log[] = $result;
-
-        Logs::singleton()->setLog($log,__METHOD__,__LINE__);
+        
         if (!$result) {
             self::close_connection();
         }

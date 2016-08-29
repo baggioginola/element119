@@ -101,7 +101,7 @@ class ProductsModel extends Database
         $result_array = array();
 
         $query = "SELECT " . self::$table . ".id, " . self::$table . ".nombre, " . self::$table . ".key_nombre, " . self::$table . ".imagenes,
-                    " .self::$table . ".descripcion, " . self::$table . ".especificaciones, " . self::$table . ".precio
+                    " .self::$table . ".descripcion, " . self::$table . ".especificaciones, " . self::$table . ".precio, categoria.key_nombre as categoria
                     FROM " . self::$table . "
                     INNER JOIN categoria on " . self::$table . ".id_categoria = categoria.id
                     WHERE producto.key_nombre = '" . $name . "' and producto.active = true and categoria.id = " .$id_category;
@@ -140,6 +140,7 @@ class ProductsModel extends Database
                     INNER JOIN categoria ON " . self::$table . ".id_categoria = categoria.id
                     WHERE categoria.id = " . $id_category . " AND producto.active = true";
 
+        Logs::singleton()->setLog($query,__METHOD__,__LINE__);
         if (!$result = $this->query($query)) {
             return false;
         }
@@ -150,6 +151,7 @@ class ProductsModel extends Database
             $result_array[] = $row;
         }
 
+        Logs::singleton()->setLog($result_array,__METHOD__,__LINE__);
         return $result_array;
     }
 }

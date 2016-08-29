@@ -7,8 +7,8 @@
  */
 define('ENVIRONMENT', 'test'); # must be production or test.
 define('__ROOT__', dirname(__FILE__));
-//define('PROJECT', 'github/element119/');
-define('PROJECT', '');
+define('PROJECT', 'github/element119/');
+//define('PROJECT', '');
 define('DOMAIN', 'http://' . $_SERVER['HTTP_HOST'] . '/' . PROJECT);
 
 define('CSS', DOMAIN . 'includes/public/css/');
@@ -26,9 +26,9 @@ define('DATABASE',  __ROOT__ . '/core/framework/readBean/');
 define('TEMPLATE',  __ROOT__ . '/app/view/template/');
 #Databases
 define('DBHOST', 'localhost');
-define('DBNAME', 'eleme849_1');
-define('DBUSER', 'eleme849_baggio');
-define('DBPASS', 'Ilcodino4169');
+define('DBNAME', 'element119');
+define('DBUSER', 'root');
+define('DBPASS', '');
 
 #Mail recipient.
 define('MAIL_RECIPIENT', 'mariocuevas88@gmail.com');

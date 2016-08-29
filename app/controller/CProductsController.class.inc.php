@@ -75,6 +75,8 @@ class Products extends BaseController
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
 
+        Logs::singleton()->setLog($this->parameters,__METHOD__,__LINE__);
+
         if($result = ProductsModel::singleton()->getByCategory($this->parameters['id_categoria'])) {
             return json_encode($this->getResponse(STATUS_SUCCESS, MESSAGE_SUCCESS, $result));
         }
@@ -115,5 +117,10 @@ class Products extends BaseController
         }
 
         return true;
+    }
+
+    public function __destruct()
+    {
+        Logs::singleton()->addLogs('category_controller');
     }
 }

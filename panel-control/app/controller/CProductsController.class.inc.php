@@ -145,6 +145,10 @@ class Products extends BaseController
             if($key == 'precio') {
                 $this->parameters[$key] = number_format($value, 2);
             }
+            if ($key == 'descripcion') {
+                $this->parameters[$key] = stripExcessWhitespace(sanitizeVariable(trim($value)));
+                continue;
+            }
             if ($key != 'key_nombre' && $key != 'precio') {
                 $this->parameters[$key] = formatString($value);
             }

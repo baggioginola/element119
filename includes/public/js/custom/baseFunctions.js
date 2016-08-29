@@ -11,41 +11,38 @@ jQuery(document).ready(function ()
         continuous: true
     });
 
-    var url = BASE_ROOT + 'categorias/getAll';
+    var type = 'categorias';
 
-    jQuery.post(url, function (response, status) {
-        if (status == 'success') {
-            var categoryImages = [];
-            var categories = jQuery('.categories');
+    var IMAGES_CATEGORY = IMAGES + type + '/';
 
-            var type = 'categorias';
+    var data = {id_categoria: 7};
+    var url = BASE_ROOT + 'productos/getByCategory';
 
-            var IMAGES_CATEGORY = IMAGES + type + '/';
-            var i = 0;
-            jQuery.each(response, function(key, value) {
-                var src = getImage(IMAGES_CATEGORY + value.key_nombre + '/', value.key_nombre, 0);
-                var style = '';
-                if(i % 3 == 0) {
-                    style = 'padding-right:10px;';
-                }
-                else if(i % 3 == 1){
-                    style = 'padding-right:5px; padding-left:5px;';
-                }
-                else {
-                    style = 'padding-left:10px;';
-                }
-                categoryImages = [
-                    '<div class="application-div" style="',style,'">',
-                    '<a href="',BASE_ROOT + value.key_nombre,'">',
-                    '<h4>', value.nombre, '</h4>',
-                    '<img alt="',value.nombre,'" src="',src,'">',
+    var products = jQuery('.productos');
+    var products_array = [];
+    var IMAGES_PRODUCT = IMAGES_CATEGORY + 'system-x/productos/';
+    jQuery.ajax({
+        url: url,
+        type: "POST",
+        cache: false,
+        data: data,
+        dataType: 'json',
+        async: false,
+        success: function (response) {
+            jQuery.each(response.data, function (key, value) {
+                var src = getImage(IMAGES_PRODUCT + value.key_nombre + '/',value.key_nombre, 0);
+                products_array = [
+                    '<div class="product-links-left">',
+                    '<a href="',BASE_ROOT + 'system-x/' + value.key_nombre,'">',
+                    '<span>',value.nombre,'</span>',
+                    '<img alt="',value.nombre,'"',
+                    'src="',src,'" width="352" height="116">',
                     '</a>',
                     '</div>'];
-                categories.append(categoryImages.join(''));
-                i++;
+                products.append(products_array.join(''));
             });
         }
-    }, 'json');
+    });
 });
 
 function getImage(root_images, name, i)

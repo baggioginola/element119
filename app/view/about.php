@@ -3,11 +3,11 @@
         <div class="breadcrumbs">
             <ul>
                 <li class="home">
-                    <a title="Go to Home Page" href="">Home</a>
+                    <a title="Inicio" href="<?php echo DOMAIN; ?>">Inicio</a>
                     <span>/ </span>
                 </li>
                 <li class="cms_page">
-                    <strong>About Element 119</strong>
+                    <strong>Acerca Element 119</strong>
                 </li>
             </ul>
         </div>
@@ -20,12 +20,12 @@
                 <br>
                 <img src="<?php echo IMAGES; ?>big_truck.jpg" alt="Paint Sealant Truck">
             </div>
-            <h1>About Us</h1>
-            <p class="txtPage"> Element 119 specializes in cutting edge ceramic coating technologies. </p>
-            <p class="txtPage"> Positioned high in Connecticut's Historic Litchfield Hills, we know how harsh winter conditions and environmental pollutants can damage your auto, aircraft and ship's appearance. We set out to engineer the next generation of professional detailing products, held to the highest standards - and Element 119 emerged. </p>
-            <p class="txtPage"> Striving to formulate products that deliver results, not promises. Element 119 produces professional detailing chemicals that are easy to use while effectively prolonging and enhancing the appearance of your vehicle. </p>
-            <p class="txtPage"> Scientifically formulated using proprietary components and technology. We offer the most advanced solutions for enhancing and protecting against damage to your paint, glass, exhaust, chrome, fabric and carpet surfaces. </p>
-            <p class="txtPage"> Whether you are looking for products to pair with your warranty program, need a coating custom formulated, or seeking a private label co-op – you found a the right partner. </p>
+            <h1>Sobre nosotros</h1>
+            <p class="txtPage">Elemento 119 se especializa en tecnologías de recubrimiento de cerámica de borde. </p>
+            <p class="txtPage">Posicionado en alta Histórico de Connecticut Litchfield Hills, sabemos cómo duras condiciones invernales y los contaminantes ambientales pueden dañar su auto, los aviones y la apariencia de la nave. Nos propusimos diseñar la próxima generación de productos que detallan profesionales, que tuvo lugar a los más altos estándares - y Element 119 emergidas</p>
+            <p class="txtPage">Esforzándose para formular productos que ofrecen resultados, no promesas. Elemento 119 produce sustancias químicas que detallan profesionales que son fáciles de usar, mientras que prolongar y mejorar el aspecto de su vehículo de manera efectiva. </p>
+            <p class="txtPage">Científicamente formulado utilizando componentes exclusivos y la tecnología. Ofrecemos las soluciones más avanzadas para la mejora y protección contra daños en la pintura, vidrio, escape, cromo, telas y alfombras superficies. </p>
+            <p class="txtPage">Ya sea que usted está buscando productos para emparejarse con el programa de garantía, necesitará un revestimiento formulado a medida, o la búsqueda de una etiqueta cooperativa privada - has encontrado un socio adecuado. </p>
             <p class="txtPage"> </p>
             <p></p>
         </div>

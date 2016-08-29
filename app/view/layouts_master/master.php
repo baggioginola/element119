@@ -31,8 +31,8 @@
                             <img id="element119" alt="Element 119 Ceramic Paint Sealant, Glass Coatings and Detailing Supplies"
                                  src="<?php echo IMAGES; ?>e119.png"/>
                         </div>
-                        <div id="maintxt">The Next Element In Ceramic Protection</div>
-                        <div id="secondtxt">Professional Coating Technologies</div>
+                        <div id="maintxt">La siguiente generación de protección</div>
+                        <div id="secondtxt">Profesionales Tecnología de Recubrimiento</div>
                     </div>
                 </div>
             </div>
