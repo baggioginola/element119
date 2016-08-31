@@ -14,7 +14,7 @@ jQuery(document).ready(function () {
 
     var IMAGES_CATEGORY = IMAGES + type + '/';
 
-    var data = {id_categoria: 7};
+    var data = {id_categoria: 4};
     var url = BASE_ROOT + 'productos/getByCategory';
 
     var products = jQuery('.productos');

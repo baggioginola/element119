@@ -12420,7 +12420,8 @@ div.calendar table td.button {
 
 .product-links-left {
     float: left;
-    width: 50%;
+    width: 48%;
+    margin-right: 12px;
 }
 
 .product-links-right {
@@ -12438,6 +12439,8 @@ div.calendar table td.button {
 
 .product-links-left span {
     float: left;
+    height: 20px;
+    overflow:hidden;
 }
 
 .product-links-clear span {

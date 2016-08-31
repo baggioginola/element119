@@ -47,8 +47,7 @@ jQuery(document).ready(function () {
                     jQuery('#title-secondary').text(response_products.data.nombre);
                     name_array = ['<h1>', response_products.data.nombre, '</h1>'];
                     product_name.append(name_array.join(''));
-
-                    jQuery('#price').text('$ ' + response_products.data.precio);
+                    
                     var descripcion = (response_products.data.descripcion).replace(/(?:\r\n|\r|\n)/g, '<br />');
 
                     product_collateral_array = [
