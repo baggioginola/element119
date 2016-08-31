@@ -30,7 +30,7 @@ class CategoriesModel extends Database
         }
         $result_array = array();
 
-        $query = "SELECT key_nombre,nombre FROM " . self::$table . " WHERE active = true";
+        $query = "SELECT key_nombre,nombre FROM " . self::$table . " WHERE active = true and id != 7";
 
         $log[] = $query;
 

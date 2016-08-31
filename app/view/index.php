@@ -2,12 +2,12 @@
         <div id="mainSlider">
             <div id="slider">
                 <ul style="width: 6840px; margin-left: -3040px;">
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-1.jpg" alt="Boat Wax" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-2.jpg" alt="System X Ceramic Resin" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-5.jpg" alt="Car Paint Sealant" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-4.jpg" alt="Scientifically Formulated" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-3.jpg" alt="Aircraft Sealant" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-6.jpg" alt="Polymer Paint Sealant" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-1.png" alt="Protección Marítima" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-2.png" alt="System X" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-5.png" alt="Protección confiable" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-4.png" alt="Científicamente formulado" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-3.png" alt="Aeronaves" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-6.png" alt="Recubrimiento cerámico de nano tecnología" /></li>
                 </ul>
             </div>
         </div>
@@ -56,7 +56,14 @@
                 <h2>Nuestros Productos</h2>
                 <div style="clear: both; margin-bottom: 30px;"></div>
             </div>
+        </div>
 
+        <div style="clear:both; margin-bottom: 30px;"></div>
+        <div id="mainContentSectionBottom">
+            <div style="clear:both;" class="categorias_index">
+                <h2>Aplicaciones</h2>
+                <div style="clear: both; margin-bottom: 30px;"></div>
+            </div>
         </div>
     </div>
 </div>
