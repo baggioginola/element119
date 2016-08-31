@@ -6,7 +6,7 @@
             <li><a href="<?php echo DOMAIN; ?>preguntas-frecuentes">PREGUNTAS</a></li>
             <li><a href="<?php echo DOMAIN; ?>acerca">ACERCA</a></li>
             <li><a href="<?php echo DOMAIN; ?>contacto">CONTACTO </a></li>
-            <li class="videoNav"><a href="">Videos</a></li>
+            <li class="videoNav"><a href="<?php echo DOMAIN; ?>videos">Videos</a></li>
         </ul>
     </div>
 </div>

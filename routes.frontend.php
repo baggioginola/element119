@@ -14,6 +14,10 @@ $app->get('/system-x', function() use ($app) {
     $app->render('system-x.php');
 });
 
+$app->get('/videos', function() use ($app) {
+    $app->render('videos.php');
+});
+
 $app->get('/preguntas-frecuentes', function() use ($app) {
     $app->render('faq.php');
 });

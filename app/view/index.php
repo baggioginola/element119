@@ -25,13 +25,13 @@
             <p class="txtPage">System X se convierte en un escudo para la pintura de su vehículo. La estructura molecular de System X se integra con las moléculas de la pintura, permaneciendo integrada a la pintura, a diferencia de cualquier cera o sellador que se pierden con unas cuantas lavadas.</p>
             <p class="txtPage">Mediante la utilización de tecnologías de resinas cerámicas patentadas, System X es completamente diferente a una cera, pulidor o sellador convencional. Este recubrimiento ofrece una inigualable resistencia a la fricción, calor, corrosión y solventes. La pintura se conserva siempre como nueva. </p>
             <p>
-                <a href="#" style="text-decoration:underline;">
+                <a href="<?php echo PDF;?>SGS_E119.pdf" style="text-decoration:underline;" target="_blank">
                     <img style="display:inline;float:left" src="<?php echo IMAGES; ?>SGS_badge.jpg" alt="SGS Testing">
                 </a>
-                <a href="#" style="text-decoration:underline;">
+                <a href="<?php echo PDF;?>SMI_Boeing.pdf" style="text-decoration:underline;" target="_blank">
                     <img style="display:inline;margin-left:85px;margin-top:15px;width:250px;" src="<?php echo IMAGES; ?>boeing_badge.jpg" alt="Aircraft Testing">
                 </a>
-                <a href="#" style="text-decoration:underline;">
+                <a href="<?php echo PDF;?>SGS_E119.pdf" style="text-decoration:underline;" target="_blank">
                     <img style="display:inline;float:right" src="<?php echo IMAGES; ?>9H_badge.png" alt="SGS 9H Hardness">
                 </a>
             </p>
@@ -39,10 +39,10 @@
         <div id="contentCapsulesACC">
             <div id="CapsulesACC">
                 <div id="capsuleOne">
-                    <a href=""><img src="<?php echo IMAGES; ?>capsule_try_system_x.jpg" alt="How to Buy System X" width="253" height="218" /></a>
+                    <a href="<?php echo DOMAIN; ?>system-x"><img src="<?php echo IMAGES; ?>capsule_try_system_x.jpg" alt="How to Buy System X" width="253" height="218" /></a>
                 </div>
                 <div id="capsuleTwo">
-                    <a href=""><img src="<?php echo IMAGES; ?>capsule_place_an_order.jpg" alt="Full Line" width="253" height="218" /></a>
+                    <a href="<?php echo DOMAIN; ?>system-x"><img src="<?php echo IMAGES; ?>capsule_place_an_order.jpg" alt="Full Line" width="253" height="218" /></a>
                 </div>
                 <div id="capsuleThree">
                     <a href=""><img src="<?php echo IMAGES; ?>capsule_watch_videos.jpg" alt="Professional Detailing Supplies" width="253" height="218" /></a>
