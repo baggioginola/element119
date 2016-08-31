@@ -21,8 +21,8 @@
                                         </label>
 
                                         <div class="input-box">
-                                            <input id="name" class="input-text required-entry" type="text" value=""
-                                                   title="Nombre" name="nombre">
+                                            <input id="name" class="input-text required-entry" required="required" type="text"
+                                                   title="Nombre" name="nombre" autocomplete="off" placeholder="Introduzca nombre">
                                         </div>
                                     </div>
                                     <div class="field">
@@ -33,26 +33,25 @@
 
                                         <div class="input-box">
                                             <input id="email" class="input-text required-entry validate-email"
-                                                   type="email" spellcheck="false" autocorrect="off"
-                                                   autocapitalize="off" value="" title="Email" name="email">
+                                                   type="email" title="Email" name="email" placeholder="Introduzca e-mail" autocomplete="off" required="required">
                                         </div>
                                     </div>
                                 </li>
-                                <li style="width:45%;float:right;margin-right:20px;margin-bottom:0px">
+                                <li style="width:45%; float:left; margin-left:60px;margin-bottom:0px">
                                     <div class="field">
                                         <label for="company">Compañía</label>
 
                                         <div class="input-box">
-                                            <input id="company" class="input-text" type="text" value=""
-                                                   title="Compañía" name="company">
+                                            <input id="company" class="input-text" type="text"
+                                                   title="Compañía" name="company" placeholder="Introduzca compañia">
                                         </div>
                                     </div>
                                     <div class="field">
                                         <label for="website">Sitio Web</label>
 
                                         <div class="input-box">
-                                            <input id="website" class="input-text" type="text" value=""
-                                                   title="Company Website" name="website">
+                                            <input id="website" class="input-text" type="text"
+                                                   title="Company Website" name="website" placeholder="Introduzca Sitio Web" autocomplete="off">
                                         </div>
                                     </div>
                                 </li>
@@ -206,7 +205,6 @@
                                                 <option value="MR"> Mauritania</option>
                                                 <option value="MU"> Mauritius</option>
                                                 <option value="YT"> Mayotte</option>
-
                                                 <option value="FM"> Micronesia</option>
                                                 <option value="MD"> Moldova</option>
                                                 <option value="MC"> Monaco</option>
@@ -323,7 +321,7 @@
 
                                     <div class="input-box">
                                         <textarea id="comment" class="required-entry input-text" rows="3" cols="5"
-                                                  title="Comment" name="comment"></textarea>
+                                                  title="Comment" name="comment" placeholder="Introduzca comentarios" required="required"></textarea>
                                     </div>
                                 </li>
                             </ul>
@@ -343,76 +341,7 @@
 
                     <p class="txtPage" style="margin-top:50px;border-top: 1px solid #ededed;"></p>
                 </div>
-                <div id="contactInfo">
-                    <div id="address">
-                        <p class="company" style="margin-top: 0;font-weight:800">Element 119 </p>
-                        <br>
-                        <table border="0" style="width: 200px;">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <div>Mailing Address:</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> Box 261</td>
-                            </tr>
-                            <tr>
-                                <td> Goshen, CT 06756</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <br>
-                        <table border="0" style="width: 200px;">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <div>Manufacturing:</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> Thomaston, CT USA</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <table border="0" style="width: 200px;">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <div>Toll Free:</div>
-                                </td>
-                                <td>(844) ELEM119</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div>Toll Free:</div>
-                                </td>
-                                <td>(844) 353-6119</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div>International:</div>
-                                </td>
-                                <td>+1 860 358 0119</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div>Email:</div>
-                                </td>
-                                <td>sales@element119.com</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <p></p>
-                    </div>
-                    <div id="google">
-                        <a target="_blank"
-                           href="https://www.google.com/maps/place/Thomaston,+CT/@41.6575921,-73.1312461,13z">
-                            <img width="116" height="45" alt="Google Maps"
-                                 src="<?php echo IMAGES; ?>logo_googlemap.gif">
-                        </a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

@@ -3,11 +3,11 @@
         <div class="breadcrumbs">
             <ul>
                 <li class="home">
-                    <a title="Go to Home Page" href="">Home</a>
+                    <a title="Inicio" href="<?php echo DOMAIN; ?>">Inicio</a>
                     <span>/ </span>
                 </li>
                 <li class="product">
-                    <strong>System X PRO Ceramic Coating</strong>
+                    <strong>System X: PROTECCIÓN CERÁMICA PROFESIONAL</strong>
                 </li>
             </ul>
         </div>
@@ -22,65 +22,23 @@
                     </div>
                     <div class="product-shop" style="margin-top:-7px">
                         <div class="product-name">
-                            <h1>System X PRO Ceramic Coating</h1>
+                            <h1>System X: PROTECCIÓN CERÁMICA PROFESIONAL</h1>
                         </div>
                         <div class="price-box">
                             <p class="txtPage" style="float: left;margin-bottom:5px">
-                                <img alt="SGS Testing" src="<?php echo IMAGES; ?>icons/sgs_icon.jpg"
-                                     style="display:inline;margin-right:5px;margin-bottom:-3px">
-                                <a style="text-decoration:underline;" href="">SGS Testing</a>
-                                <img alt="System X PRO Ceramic Coating Application Sheet"
-                                     src="<?php echo IMAGES; ?>icons/boeing_icon.jpg"
-                                     style="display:inline;margin-right:5px;margin-bottom:-3px;margin-left:10px">
-                                <a style="text-decoration:underline;" href="">Boeing Testing</a>
                                 <img alt="System X PRO Ceramic Coating Data Sheet"
                                      src="<?php echo IMAGES; ?>icons/pdf_icon.gif"
                                      style="display:inline;margin-right:5px;margin-bottom:-3px;margin-left:10px">
-                                <a style="text-decoration:underline;" href="">Data</a>
+                                <a style="text-decoration:underline;" href="">Aplicación PDF</a>
                             </p>
                         </div>
-                        <div id="product-options-wrapper" class="product-options">
-                            To place an order or to speak about partnership opportunities please contact us.
-                            <div class="add-to-cart" style="margin:10px 0 0px 0px">
-                                <button id="product-addtocart-button" class="button btn-cart" type="button"
-                                        title="Contact Us" onclick="location.href = '/contacts';">
-                <span>
-                <span>Contact Us</span>
-            </span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="product-options-bottom">
-                            <img alt="System X PRO Ceramic Coating Application Sheet"
-                                 src="<?php echo IMAGES; ?>icons/pdf_icon.gif" style="display:inline;margin-right:5px;">
-                            <a style="text-decoration:underline;" href="">Application PDF</a>
-            <span style="float:right">
-                <img style="display:inline;margin-right:5px;margin-left:10px;height:15px"
-                     src="<?php echo IMAGES; ?>worldwide.jpg" alt="Ships Worldwide">
-                <a href="contacts" style="text-decoration:underline;">Ships Worldwide</a>
-            </span>
-                        </div>
+
                     </div>
                     <div class="product-img-box">
                         <p class="product-image">
                             <img id="image" title="System X PRO" alt="System X PRO"
                                  src="<?php echo IMAGES; ?>sxkit_1.jpg">
                         </p>
-
-                        <p id="track_hint" class="zoom-notice" style="display: none;">Double click on above image to
-                            view full picture</p>
-
-                        <div class="zoom" style="display: none;">
-                            <img id="zoom_out" class="btn-zoom-out" title="Zoom Out" alt="Zoom Out"
-                                 src="<?php echo IMAGES; ?>slider_btn_zoom_out.gif">
-
-                            <div id="track">
-                                <div id="handle"></div>
-                            </div>
-                            <img id="zoom_in" class="btn-zoom-in" title="Zoom In" alt="Zoom In"
-                                 src="<?php echo IMAGES; ?>slider_btn_zoom_in.gif">
-                        </div>
-
                     </div>
                     <div class="clearer"></div>
                 </form>
@@ -89,41 +47,46 @@
             <div class="product-collateral">
 
                 <div class="topSection">
-                    <h1>System X Shatter-Proof Ceramic Coating</h1>
+                    <h1>System X. Revestimiento cerámico anti-ruptura.</h1>
 
                     <div class="itemSection2" style="height: 270px;width: 330px;">
                         <div class="itemImgSection"
                              style="height: 110px;line-height: 110px;margin-bottom:15px;float:left">
                             <img width="100" src="<?php echo IMAGES; ?>15-minutes.jpg"
                                  alt="System X Ceramic Coating Kit" style="float:left">
-                            <span style="font-size:15px;">Fast & Easy Application</span>
+                            <span style="font-size:15px;">Rapida & Facil Aplicacion</span>
                         </div>
                         <div class="itemImgSection"
                              style="height: 110px;line-height: 110px;margin-bottom:15px;float:left">
                             <img width="100" src="<?php echo IMAGES; ?>years-protection.png"
                                  alt="System X Ceramic Coating Kit" style="float:left">
-                            <span style="font-size:15px;">Years of Protection</span>
+                            <span style="font-size:15px;">Años de proteccion</span>
                         </div>
                     </div>
                 </div>
                 <div class="topSection">
                     <p class="txtPage">
-                        <em>Unbelievable Brilliance and Protection.</em>
+                        <em>Brillo y protección increíbles...</em>
                         ..
                     </p>
 
-                    <p class="txtPage">System X Ceramic Paint Sealant represents a bold new evolution in paint
-                        protection products.</p>
+                    <p class="txtPage">El revestimiento nanotecnológico System X representa una audaz evolución en los
+                        productos de protección para la pintura.</p>
 
-                    <p class="txtPage">Exhibiting an extremely durable color enhancing gloss which protects exterior
-                        surfaces including paint, metal, exhaust, stainless steel, wheels, and gel coat.</p>
+                    <p class="txtPage">Brinda un escudo de brillo extremadamente durable que protege todas las
+                        superficies exteriores, incluyendo la pintura, tubos de escape, rines y partes de metal y
+                        acero.</p>
 
-                    <p class="txtPage">System X is a semi-permanent coating that actually becomes the functional surface
-                        of your vehicle's paintwork. By creating an inseparable bond on a molecular level with your
-                        paintwork you get a coating that cannot be washed off like a wax or sealant.</p>
+                    <p class="txtPage">System X es un revestimiento de cerámica semi-permanente, que se aplica sin
+                        necesidad de máquina en unos 15 minutos, y proporciona brillo y una resistente protección a
+                        largo plazo.</p>
 
-                    <p class="txtPage">System X acts as a second clear coat that provides increased protection against
-                        the elements.</p>
+                    <p class="txtPage">System X se convierte en un escudo para la pintura de su vehículo. La estructura
+                        molecular de System X se integra con las moléculas de la pintura, permaneciendo integrada a la
+                        pintura, a diferencia de cualquier cera o sellador que se pierden con unas cuantas lavadas.</p>
+
+                    <p class="txtPage">System X actúa como una segunda capa transparente que aumenta radicalmente la
+                        protección contra los elementos.</p>
 
                     <div class="videoSection">
                         <a rel="prettyPhoto" href="https://www.youtube.com/watch?v=QKSZvq-sKuY"
@@ -152,67 +115,71 @@
                             <img alt="System X Application Video" src="<?php echo IMAGES; ?>application.jpg">
                         </a>
                         <br>
-                        <a target="_blank" href="">View All Videos</a>
+                        <a target="_blank" href="">Ver todos los videos</a>
                     </div>
-                    <p class="txtPage">This new clear coating is glossier, chemical resistant, and harder than the
-                        original clear coat. Providing incredible protection against minor scratches, swirl marks, acid
-                        rain, bird droppings, and harmful UV rays. Easy hand application only takes 15 - 20 minutes.</p>
+                    <p class="txtPage">Esta nueva capa de revestimiento is más brillante, químicamente resistente, y con
+                        mayor dureza que la capa de pintura original. Brinda una protección sensacional contra rayones
+                        leves, lluvia ácida, excremento de aves, contra los dañinos rayos UV, y evita las marcas de
+                        remolino.</p>
+
+                    <p class="txtPage">Se aplica fácilmente a mano, sin necesidad de máquina, y en tan solo 15-20
+                        minutos.</p>
                 </div>
                 <div>
-                    <p class="txtPage">System X is not a your typical wax or sealant, which only forms a sacrificial
-                        shield of protection. Instead, it bonds into your paintwork or metal creating a semi-permanent
-                        glossy shell over the surface.</p>
+                    <p class="txtPage">System X no es la clásica cera o sellador, los cuales forman ofrecen una capa
+                        temporal de protección. Por el contrario, se integra molecularmente a la pintura y al metal,
+                        creando un brillante escudo semi-permanente en la superficie.</p>
 
-                    <p class="txtPage">This shell provides a slick and easy to clean barrier against the elements by
-                        repelling water and preventing the adherence of contaminants.</p>
+                    <p class="txtPage">Este escudo brinda una barrera fácil de limpiar, con gran repelencia al agua y
+                        evitando que se adhieran manchas y contaminantes.</p>
 
-                    <p class="txtPage">Regular washing is the only maintenance needed to keep your vehicle looking
-                        fantastic. The coating can even be waxed or sealed over with your favorite product to intensify
-                        gloss.</p>
+                    <p class="txtPage">Con System X, el único mantenimiento requerido son unas simples lavadas para
+                        conservar su auto siempre como nuevo. Si así lo desea, puede aplicar su cera preferida sobre el
+                        recubrimiento para incrementar el brillo.</p>
                 </div>
                 <div style="padding-bottom: 30px;">
-                    <p class="txtPage">System X paint protection can be applied to the entire exterior of your vehicle,
-                        except rubber and soft plastic. System X also performs exceptionally well on alloy wheels and
-                        aircraft exhaust ports.</p>
+                    <p class="txtPage">System X se puede aplicar a todo el exterior de su vehículo, excepto en goma o
+                        plásticos suaves. System X también tiene excelente desempeño protegiendo los rines de aluminio e
+                        incluso en los tubos de escape de las aeronaves.</p>
 
-                    <p class="txtPage">System X Ceramic Coating bonds into the paint work's microscopic pores, forming
-                        an extremely durable crystal clear ceramic finish. This provides genuine long-term
-                        protection.</p>
+                    <p class="txtPage">La protección cerámica de System X penetra en los micro poros de la pintura,
+                        brindando un acabado cerámico extremadamente resistente y de alto brillo. Esto ofrece una
+                        protección genuina de larga duración.</p>
 
-                    <p class="txtPage">Testing has shown System X Resin Coating to be extremely resilient to solvents,
-                        weathering, and general wear and tear.</p>
+                    <p class="txtPage">Las pruebas de laboratorio han demostrado que el revestimiento cerámico de System
+                        X es sumamente resistente a los solventes y a la intemperie en general.</p>
 
                     <p class="txtPage">
-                        As you can see in the
-                        <a href="">System X videos</a>
-                        , this coating demonstrates resistance to almost anything and a capacity to keep vehicles
-                        looking cleaner for longer through its hydro-repellent nature.
+                        Como puede ver en los videos
+                        <a href="">System X</a>
+                        demuestra su resistencia prácticamente contra todo, y ofrece la ventaja de conservar los
+                        vehículos limpios por más tiempo, gracias a su enorme hidro-repelencia.
                     </p>
 
                     <p class="txtPage">
-                        View the
-                        <a compared"="" resistance="" water="" salt="" href="http://www.youtube.com/watch?v=QKSZvq-sKuY
-                        title=" rel="prettyPhoto">Saltwater Submersion Test</a>
-                        to see how System X can protect your car from road salts, your boat from salt water, and your
-                        aircraft from harsh de-icing solutions.
+                        Observe la
+                        <a href="http://www.youtube.com/watch?v=QKSZvq-sKuY
+                        title=" rel="prettyPhoto">Prueba de Inmersión en Agua Salada</a>
+                        para ver cómo System X protege su automóvil en lugares cerca de la playa, su bote de las sales
+                        de mar, y las aeronaves del daño producido en el deshielo.
                     </p>
 
                     <p class="txtPage">
-                        Check out the
+                        Observe la
                         <a title="Detergent Wash Test" href="http://www.youtube.com/watch?v=uYuLVQM16bU"
-                           rel="prettyPhoto">Detergent Wash Test</a>
-                        to see how System X holds up to 150 washes with DAWN detergent without degrading.
+                           rel="prettyPhoto">Prueba de Lavado con Detergente</a>
+                        para ver la resistencia de System X por más de 150 lavadas sin degradarse.
                     </p>
 
-                    <p class="txtPage">What if you need to paint or touch-up your paintwork? No problem. Since System X
-                        is only a couple microns thick you can polish or compound the coating off before completing
-                        these tasks.</p>
+                    <p class="txtPage">¿Qué pasa si usted necesita pintar o retocar la pintura de su auto? No hay
+                        problema. Ya que System X forma una película de unas cuantas micras, el recubrimiento puede
+                        pulirse para después realizar esas tareas.</p>
 
-                    <p class="txtPage">System X is produced and packaged to minimize environmental damage and ensure the
-                        freshest possible product.</p>
+                    <p class="txtPage">System X es producido y empacado minimizando los daños al medio ambiente,
+                        ofreciendo productos con extraordinaria calidad.</p>
                 </div>
                 <div class="prodSection">
-                    <span class="linkhead">Harnessing Nanotech Surface Protection Technology</span>
+                    <span class="linkhead">Utilización de Nanotecnología para la Protección de Superficies.</span>
 
                     <p class="txtPage">
                         <em>Cutting Edge Surfactant Chemistry.</em>
@@ -222,19 +189,20 @@
                     <div style="float: left; width: 500px; margin-right: 25px; margin-bottom: 15px;">
                         <img alt="System X Surface Magnification" src="<?php echo IMAGES; ?>surfacemagnification.jpg">
                     </div>
-                    <p class="txtPage">When examined under a microscope, paintwork has rough surface consisting of peaks
-                        and valleys allowing adhesion of dirt and grime.</p>
+                    <p class="txtPage">Al observar bajo el microscopio, la superficie de la pintura tiene pequeños
+                        bordes en los que se adhiere la suciedad. System X sella esos bordes y deja una superficie mucho
+                        más uniforme, permitiendo que los contaminantes se limpien mucho más fácilmente. El resultado es
+                        una superficie con una protección transparente de extrema dureza que mejora la apariencia del
+                        vehículo.</p>
 
-                    <p class="txtPage">System X seals these valleys and smooths the surface allowing contaminants to
-                        wash off easily. What remains is a very hard crystal clear surface, which greatly adds to the
-                        overall aesthetic.</p>
+                    <p class="txtPage">Este recubrimiento cerámico brinda una protección a largo plazo muy superior a
+                        las ceras carnauba o a los selladores de polímeros, mejorando el color, el brillo y la capacidad
+                        refractaria de la superficie.</p>
 
-                    <p class="txtPage">This new shatterproof ceramic coating provides outstanding long-term protection
-                        over carnauba waxes or polymer sealants while enhancing color, gloss, and surface
-                        refractability.</p>
                 </div>
                 <div class="prodSection">
-                    <span class="linkhead">It's Time to Change the Way You Think About Surface Protection</span>
+                    <span
+                        class="linkhead">Es hora de cambiar su forma de pensar acerca de Protecciones de Superficies.</span>
 
                     <p class="txtPage">
                         <em>A New Cornerstone in Detailing.</em>
@@ -243,111 +211,80 @@
                     <img style="margin-top: 25px;margin-bottom: 35px;" src="<?php echo IMAGES; ?>chart.jpg"
                          alt="Evolution of Paint Sealants">
 
-                    <p class="txtPage">Over the last few decades paint protection technology has come a long way. The
-                        innovations in the market can be grouped into three major leaps:</p>
+                    <p class="txtPage">En las últimas décadas el desarrollo de las protecciones para superficies ha ido
+                        evolucionando. Las innovaciones en el mercado podrían agruparse en tres tipos
+                        principalmente:</p>
                     <table border="0" align="center" style="width: 711px;">
                         <tbody>
                         <tr>
                             <td width="130" valign="top">
-                                <p class="txtPage">Generation 1</p>
+                                <p class="txtPage">Primera Generación</p>
                             </td>
                             <td width="571">
-                                <p class="txtPage">During the last half-century car waxes have ruled the market. Ranging
-                                    from naturally occurring waxes like carnauba to man-made synthetic waxes. While
-                                    imparting gloss and a sacrificial barrier of protection their effect is short lived.
-                                    Environmental hazards quickly break down and remove traditional waxes leaving
-                                    paintwork exposed to damage.</p>
+                                <p class="txtPage">Durante la primera mitad del siglo pasado, las ceras automotrices
+                                    dominaron el mercado. Ceras de origen natural como la carnauba y ceras sintéticas.
+                                    Ofrecen brillo y una leve protección que dura muy poco tiempo. Los elementos
+                                    ambientales las dañan rápidamente dejando la pintura sin protección rápidamente.</p>
                             </td>
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p class="txtPage">Generation 2</p>
+                                <p class="txtPage">Segunda Generación</p>
                             </td>
                             <td>
-                                <p class="txtPage">In the last 20 years paint sealants were introduced to the world of
-                                    paint protection. Typically these sealants are derived from amino functional fluids
-                                    in the form of polymers. They give a good initial shine, which can last 6 months,
-                                    sometimes longer. The thin protective coating of this type of product is ineffective
-                                    when cleaners containing solvents or the corrosive natural chemicals such as those
-                                    found in birdlime and tree sap contact the surface.</p>
+                                <p class="txtPage">En los últimos 20 años, los selladores para pintura fueron
+                                    introducidos al mercado. Típicamente, estos selladores son derivados de fluidos
+                                    amino funcionales en forma de polímeros. Brindan un buen brillo inicial, y pueden
+                                    durar hasta 6 meses, y a veces un poco más. La delgada protección se vuelve
+                                    inefectiva cuando la pintura es limpiada con algún limpiador que tenga un poco de
+                                    solventes, cuando los químicos corrosivos naturales como los que se encuentran en el
+                                    excremento de las aves y la resina de algunos árboles entran en contacto con la
+                                    superficie.</p>
                             </td>
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p class="txtPage">Generation 3</p>
+                                <p class="txtPage">Tercera Generación</p>
                             </td>
                             <td>
-                                <p class="txtPage">System X - A brand new innovation in paint protection. The no-paste,
-                                    no-wax formula is specially designed to work on all the latest paint finishes and
-                                    varnishes. The active ceramic resin binds with complex polymers to provide a
-                                    thickness and hardness unachievable until now. System X Resin can be used on all
-                                    exterior paint surfaces including alloys. By bonding into the surface pores and
-                                    forming an extremely durable semi-permanent coating System X provides genuine
-                                    long-term protection, which requires no maintenance other than washing.</p>
+                                <p class="txtPage">System X representa la nueva generación en protección de pintura. Sin
+                                    ceras ni pastas, es una fórmula diseñada para trabajar en todo tipo de pintura y
+                                    barniz. La resina de cerámica activa se fusiona molecularmente con los polímeros
+                                    complejos para brindar una dureza y protección inalcanzables hasta ahora. System X
+                                    puede utilizarse en todas las superficies exteriores, incluyendo aleaciones.
+                                    Integrándose con los poros de la pintura, System X brinda una verdadera protección a
+                                    largo plazo, que no requiere mantenimiento más allá del lavado convencional.</p>
                             </td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-                <table border="0" style="width: 723px;margin-top:20px;margin-bottom:40px">
-                    <tbody>
-                    <tr>
-                        <td align="right"></td>
-                        <td width="46">
-                <span class="txtPage">
-                <a href="">
-                    <img alt="Bulk Ceramic Coating" src="<?php echo IMAGES; ?>pallet_icon.jpg">
-                </a>
-                <a></a>
-                </span>
-                        </td>
-                        <td>
-                            <p class="txtPage">
-                                <strong>Bulk Quantities Available</strong>
-                            </p>
-                        </td>
-                        <td width="120"></td>
-                        <td width="46">
-                <span class="txtPage">
-                <img alt="Ships Worldwide" src="<?php echo IMAGES; ?>worldwide.jpg">
-                </span>
-                        </td>
-                        <td width="234">
-                            <p class="txtPage">
-                                <strong>Ships Worldwide</strong>
-                            </p>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+
                 <div style="clear:both;">
                     <p class="txtPage">
                         <a name="answer121"></a>
-                        <strong>How much System X do I need?</strong>
+                        <strong>¿Qué cantidad de System X necesito?</strong>
                     </p>
 
-                    <p class="txtPage"> We recommend the following coverage for the best results. While we do have
-                        customers that stretch the coverage up to 200%, we do not recommend doing so. We think every
-                        application should be carried out to achieve the greatest performance. Remember, if you have
-                        extra product you can apply a second coat to horizontal surfaces, surfaces near the water line,
-                        and areas near exhaust ports. </p>
+                    <p class="txtPage">Recomendamos las siguientes cantidades para obtener los mejores resultados. Por
+                        ningún motivo recomendamos rebajar el producto. Debe utilizarse tal y como se encuentra en su
+                        envase original. Si termina de aplicar y aún queda producto en el envase, puede aplicar una
+                        segunda capa a las superficies horizontales, a la zona cercana al escape, etc.</p>
 
                     <p class="txtPage">
-                        System X covers approx. 230 sq feet per 100ml. See below for more detail.
+                        System X cubre aproximadamente 22m2 por cada 100ml. La tabla muestra más detalles:
                         <br>
-                        65ml bottle = 150 sq. ft. coverage
-                        <br>
-                        275ml bottle = 630 sq. ft. coverage
+                        65ml =14m2 de superficie protegida
                     </p>
 
                     <p class="txtPage" style="margin-top:40px">
-                        <strong>Car/Large SUV (e.g. Cadillac Escalade SUV)</strong>
+                        <strong>Carro/SUV (ej. Cadillac Escalade SUV)</strong>
                     </p>
-                    <table border="1">
+                    <table border="1" style="width: 730px;">
                         <tbody>
                         <tr>
-                            <th>Model / Size</th>
-                            <th>Suggested Quantity of System X</th>
+                            <th>Tamaño / Modelo</th>
+                            <th>Cantidad sugerida de System X</th>
                         </tr>
                         <tr></tr>
                         <tr>
@@ -361,51 +298,11 @@
                                     <br>
                                 </p>
                             </td>
-                            <td>One 65ml bottle of System X</td>
+                            <td>Una botella de 65ml de System X</td>
                         </tr>
                         </tbody>
                     </table>
-                    <br>
-                    <br>
 
-                    <p class="txtPage">
-                        <strong>Calculate how much product you need to treat:</strong>
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="">Motorcycles</a>
-                        </li>
-                        <li>
-                            <a href="">Trucks</a>
-                        </li>
-                        <li>
-                            <a href="">Aircraft</a>
-                        </li>
-                        <li>
-                            <a href="">Yachts and Boats</a>
-                        </li>
-                        <li>
-                            <a href="">Motorhomes and RVs</a>
-                        </li>
-                        <li>
-                            <a href="">Commercial Vehicles</a>
-                        </li>
-                        <li>
-                            <a href="">Police Vehicles</a>
-                        </li>
-                        <li>
-                            <a href="">Fire Dept. Vehicles</a>
-                        </li>
-                    </ul>
-                    <p></p>
-                    <br>
-                    <br>
-
-                    <p>
-                        <a href="">Contact us</a>
-                        if you need help calculating how much product needed or to purchase case or pallet quantities.
-                    </p>
-                    <br>
 
                     <div style="text-align:center;margin-top:50px;margin-bottom:350px;">
                         <div style="float:left;width:50%">
@@ -419,52 +316,14 @@
                                  style="display:inline;margin:10px">
                         </div>
                     </div>
-                    <div class="prodSection" style="clear:both;">
-                        <h2>Also Check Out Other Products In Our PRO Line</h2>
 
-                        <div style="text-align:center;margin-top:50px;margin-bottom:350px;">
-                            <div class="product-links-left">
-                                <a href="/system-x.html">
-                                    <span>System X Pro</span>
-                                    <img alt="System X Pro Ceramic Coating"
-                                         src="<?php echo IMAGES; ?>pro_callout_sm.jpg">
-                                </a>
-                            </div>
-                            <div class="product-links-right">
-                                <a href="/diamond-hardcoat.html">
-                                    <span>System X Diamond Hardcoat</span>
-                                    <img alt="System X Diamond Hardcoat Ceramic Coating"
-                                         src="<?php echo IMAGES; ?>diamond_callout_sm.jpg">
-                                </a>
-                            </div>
-                            <div class="product-links-left product-links-clear">
-                                <a href="/glass-coating.html">
-                                    <span>System X Glass Coating</span>
-                                    <img alt="System X Glass Coating Ceramic Coating"
-                                         src="<?php echo IMAGES; ?>glass_callout_sm.jpg">
-                                </a>
-                            </div>
-                            <div class="product-links-right">
-                                <a href="/interior-coating.html">
-                                    <span>System X Interior Coating</span>
-                                    <img alt="System X Interior Coating" src="<?php echo IMAGES; ?>int_callout_sm.jpg">
-                                </a>
-                            </div>
-                            <div class="product-links-left product-links-clear">
-                                <a href="/reload.html">
-                                    <span>System X Reload</span>
-                                    <img alt="System X Reload Ceramic Coating"
-                                         src="<?php echo IMAGES; ?>reload_callout_sm.jpg">
-                                </a>
-                            </div>
-                            <div class="product-links-right">
-                                <a href="/polish-nano.html">
-                                    <span>System X Polish Nano</span>
-                                    <img alt="System X Reload Ceramic Coating"
-                                         src="<?php echo IMAGES; ?>polish_callout_sm.jpg">
-                                </a>
-                            </div>
+                    <div style="clear:both; margin-bottom: 30px;"></div>
+                    <div id="mainContentSectionBottom">
+                        <div style="clear:both;" class="productos">
+                            <h2>Nuestros Productos</h2>
+                            <div style="clear: both; margin-bottom: 30px;"></div>
                         </div>
+
                     </div>
                 </div>
 

@@ -7,7 +7,7 @@
  */
 define('ENVIRONMENT', 'test'); # must be production or test.
 define('__ROOT__', dirname(__FILE__));
-define('PROJECT', 'github/element119/');
+define('PROJECT', 'vc/test/github/element119/');
 //define('PROJECT', '');
 define('DOMAIN', 'http://' . $_SERVER['HTTP_HOST'] . '/' . PROJECT);
 
