@@ -3,20 +3,22 @@
         <div class="breadcrumbs">
             <ul>
                 <li class="home">
-                    <a href="http://www.element119.com/" title="Go to Home Page">Home</a>
+                    <a href="<?php echo DOMAIN; ?>" title="Inicio">Inicio</a>
                     <span>/ </span>
                 </li>
                 <li class="cms_page">
-                    <strong>System X Videos</strong>
+                    <strong>ELEMENT 119. VIDEOS.</strong>
                 </li>
             </ul>
         </div>
         <div class="std"><p>
 
-            <h1>Element 119 Videos</h1>
+            <h1>ELEMENT 119. VIDEOS.</h1>
 
             <p class="txtPage">
-                Aqui podras encontrar algunos videos de inforamcion y ayuda de como aplicar System X, tips de aplicacion y algunas pruebas de durabilidad
+                Aquí podrás encontrar algunos videos con información y ayuda para aplicar los productos <label>System X.</label>
+                Presentamos tips de
+                aplicación y algunas pruebas de durabilidad y desempeño.
             </p>
 
             <div>
@@ -43,7 +45,7 @@
                         src="https://www.youtube.com/embed/QKSZvq-sKuY"></iframe>
             </div>
             <div class="little-video-right">
-                <h4>Prueba parabrisas System X</h4>
+                <h4>PRUEBA EN UN PARABRISAS CON SYSTEM X GLASS</h4>
                 <iframe width="330" height="186" frameborder="0" allowfullscreen=""
                         src="https://www.youtube.com/embed/LfZjicSjQPc"></iframe>
             </div>
@@ -54,7 +56,7 @@
             </div>
 
             <div class="little-video-right">
-                <h4>Aplicacion interior System X</h4>
+                <h4>APLICACIÓN SYSTEM X INTERIOR</h4>
                 <iframe width="330" height="186" frameborder="0" allowfullscreen=""
                         src="https://www.youtube.com/embed/Am2znJK8Y2Q"></iframe>
             </div>
@@ -65,7 +67,7 @@
             </div>
 
             <div class="little-video-right">
-                <h4>Agua System X</h4>
+                <h4>REPELENCIA AL AGUA SYSTEM X</h4>
                 <iframe width="330" height="186" frameborder="0" allowfullscreen=""
                         src="https://www.youtube.com/embed/1FLjdPkgZmg"></iframe>
             </div>

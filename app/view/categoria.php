@@ -36,11 +36,6 @@
                         <img alt="System X PRO Ceramic Coating Application Sheet"
                              src="<?php echo IMAGES; ?>icons/pdf_icon.gif" style="display:inline;margin-right:5px;">
                         <a style="text-decoration:underline;" href="">Application PDF</a>
-            <span style="float:right">
-                <img style="display:inline;margin-right:5px;margin-left:10px;height:15px"
-                     src="<?php echo IMAGES; ?>worldwide.jpg" alt="Ships Worldwide">
-                <a href="contacts" style="text-decoration:underline;">Ships Worldwide</a>
-            </span>
                     </div>
                 </div>
                 <div class="product-img-box">
@@ -51,19 +46,14 @@
 
                 </div>
                 <div class="product-collateral"></div>
-                
-                <div style="clear:both;">
-                    <p>
-                        <a href="">Contact us</a>
-                        if you need help calculating how much product needed or to purchase case or pallet
-                        quantities.
-                    </p>
-                    <br>
 
-                    <div class="prodSection" style="clear:both;">
-                        <h2>Productos</h2>
-
-                        <div style="text-align:center;margin-top:10px;margin-bottom:10px;" id="productos"></div>
+                <div style="clear:both; margin-bottom: 20px;"></div>
+                <div style="clear:both; margin-top: 20px;">
+                    <div id="mainContentSectionBottom">
+                        <div style="clear:both;" class="productos">
+                            <h2>Otros Productos</h2>
+                            <div style="clear: both; margin-bottom: 30px;"></div>
+                        </div>
                     </div>
                 </div>
             </div>

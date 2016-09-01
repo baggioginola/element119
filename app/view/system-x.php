@@ -29,7 +29,7 @@
                                 <img alt="System X PRO Ceramic Coating Data Sheet"
                                      src="<?php echo IMAGES; ?>icons/pdf_icon.gif"
                                      style="display:inline;margin-right:5px;margin-bottom:-3px;margin-left:10px">
-                                <a style="text-decoration:underline;" href="">Aplicación PDF</a>
+                                <a style="text-decoration:underline;" href="<?php echo PDF; ?>system-x-pro-proteccion-de-alto-brillo-para-la-pintura.pdf" target="_blank">Aplicación PDF</a>
                             </p>
                         </div>
 
@@ -54,13 +54,13 @@
                              style="height: 110px;line-height: 110px;margin-bottom:15px;float:left">
                             <img width="100" src="<?php echo IMAGES; ?>15-minutes.jpg"
                                  alt="System X Ceramic Coating Kit" style="float:left">
-                            <span style="font-size:15px;">Rapida & Facil Aplicacion</span>
+                            <span style="font-size:15px;">Rápida & Fácil Aplicación</span>
                         </div>
                         <div class="itemImgSection"
                              style="height: 110px;line-height: 110px;margin-bottom:15px;float:left">
                             <img width="100" src="<?php echo IMAGES; ?>years-protection.png"
                                  alt="System X Ceramic Coating Kit" style="float:left">
-                            <span style="font-size:15px;">Años de proteccion</span>
+                            <span style="font-size:15px;">Años de protección</span>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                         <br>
                         <a target="_blank" href="">Ver todos los videos</a>
                     </div>
-                    <p class="txtPage">Esta nueva capa de revestimiento is más brillante, químicamente resistente, y con
+                    <p class="txtPage">Esta nueva capa de revestimiento es más brillante, químicamente resistente, y con
                         mayor dureza que la capa de pintura original. Brinda una protección sensacional contra rayones
                         leves, lluvia ácida, excremento de aves, contra los dañinos rayos UV, y evita las marcas de
                         remolino.</p>
@@ -126,21 +126,21 @@
                         minutos.</p>
                 </div>
                 <div>
-                    <p class="txtPage">System X no es la clásica cera o sellador, los cuales forman ofrecen una capa
+                    <p class="txtPage">System X no es la clásica cera o sellador, los cuales ofrecen una capa
                         temporal de protección. Por el contrario, se integra molecularmente a la pintura y al metal,
                         creando un brillante escudo semi-permanente en la superficie.</p>
 
                     <p class="txtPage">Este escudo brinda una barrera fácil de limpiar, con gran repelencia al agua y
                         evitando que se adhieran manchas y contaminantes.</p>
 
-                    <p class="txtPage">Con System X, el único mantenimiento requerido son unas simples lavadas para
+                    <p class="txtPage">Con System X, el único mantenimiento requerido es una simple lavada para
                         conservar su auto siempre como nuevo. Si así lo desea, puede aplicar su cera preferida sobre el
                         recubrimiento para incrementar el brillo.</p>
                 </div>
                 <div style="padding-bottom: 30px;">
                     <p class="txtPage">System X se puede aplicar a todo el exterior de su vehículo, excepto en goma o
                         plásticos suaves. System X también tiene excelente desempeño protegiendo los rines de aluminio e
-                        incluso en los tubos de escape de las aeronaves.</p>
+                        incluso en las turbinas de las aeronaves.</p>
 
                     <p class="txtPage">La protección cerámica de System X penetra en los micro poros de la pintura,
                         brindando un acabado cerámico extremadamente resistente y de alto brillo. Esto ofrece una
@@ -158,8 +158,8 @@
 
                     <p class="txtPage">
                         Observe la
-                        <a href="http://www.youtube.com/watch?v=QKSZvq-sKuY
-                        title=" rel="prettyPhoto">Prueba de Inmersión en Agua Salada</a>
+                        <a href="http://www.youtube.com/watch?v=QKSZvq-sKuY"
+                        title="" rel="prettyPhoto">Prueba de Inmersión en Agua Salada</a>
                         para ver cómo System X protege su automóvil en lugares cerca de la playa, su bote de las sales
                         de mar, y las aeronaves del daño producido en el deshielo.
                     </p>
@@ -182,16 +182,16 @@
                     <span class="linkhead">Utilización de Nanotecnología para la Protección de Superficies.</span>
 
                     <p class="txtPage">
-                        <em>Cutting Edge Surfactant Chemistry.</em>
+                        <em>Lo más avanzado en protección para metales y pintura...</em>
                         ..
                     </p>
 
                     <div style="float: left; width: 500px; margin-right: 25px; margin-bottom: 15px;">
-                        <img alt="System X Surface Magnification" src="<?php echo IMAGES; ?>surfacemagnification.jpg">
+                        <img alt="System X Surface Magnification" src="<?php echo IMAGES; ?>surfacemagnification.png" width="500px">
                     </div>
                     <p class="txtPage">Al observar bajo el microscopio, la superficie de la pintura tiene pequeños
                         bordes en los que se adhiere la suciedad. System X sella esos bordes y deja una superficie mucho
-                        más uniforme, permitiendo que los contaminantes se limpien mucho más fácilmente. El resultado es
+                        más uniforme, permitiendo que los contaminantes se limpien más fácilmente. El resultado es
                         una superficie con una protección transparente de extrema dureza que mejora la apariencia del
                         vehículo.</p>
 
@@ -208,7 +208,7 @@
                         <em>A New Cornerstone in Detailing.</em>
                         ..
                     </p>
-                    <img style="margin-top: 25px;margin-bottom: 35px;" src="<?php echo IMAGES; ?>chart.jpg"
+                    <img style="margin-top: 25px;margin-bottom: 35px;" src="<?php echo IMAGES; ?>chart.png" width="720px"
                          alt="Evolution of Paint Sealants">
 
                     <p class="txtPage">En las últimas décadas el desarrollo de las protecciones para superficies ha ido

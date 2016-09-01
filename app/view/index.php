@@ -2,12 +2,12 @@
         <div id="mainSlider">
             <div id="slider">
                 <ul style="width: 6840px; margin-left: -3040px;">
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-1.jpg" alt="Boat Wax" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-2.jpg" alt="System X Ceramic Resin" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-5.jpg" alt="Car Paint Sealant" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-4.jpg" alt="Scientifically Formulated" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-3.jpg" alt="Aircraft Sealant" /></li>
-                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-6.jpg" alt="Polymer Paint Sealant" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-1.png" alt="Protección Marítima" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-2.png" alt="System X" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-5.png" alt="Protección confiable" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-4.png" alt="Científicamente formulado" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-3.png" alt="Aeronaves" /></li>
+                    <li style="float: left;"><img src="<?php echo IMAGES; ?>slider/slide-6.png" alt="Recubrimiento cerámico de nano tecnología" /></li>
                 </ul>
             </div>
         </div>
@@ -19,7 +19,7 @@
                 <a href=""><img src="<?php echo IMAGES; ?>homepage_callout.jpg" alt="System X Paint Protection" width="285" height="210" /></a>
             </div>
             <div id="contentImgButtonRight">
-                <a href=""><img src="<?php echo IMAGES; ?>learnmore.jpg" alt="Ceramic Coating" /></a>
+                <a href="<?php echo DOMAIN; ?>system-x"><img src="<?php echo IMAGES; ?>learnmore.jpg" alt="Recubrimiento Cerámica" width="160px"/></a>
             </div>
             <p class="txtPage">System X es un revestimiento de cerámica semi-permanente, que se aplica sin necesidad de máquina en unos 15 minutos, y proporciona brillo y una resistente protección a largo plazo.</p>
             <p class="txtPage">System X se convierte en un escudo para la pintura de su vehículo. La estructura molecular de System X se integra con las moléculas de la pintura, permaneciendo integrada a la pintura, a diferencia de cualquier cera o sellador que se pierden con unas cuantas lavadas.</p>
@@ -36,19 +36,6 @@
                 </a>
             </p>
         </div>
-        <div id="contentCapsulesACC">
-            <div id="CapsulesACC">
-                <div id="capsuleOne">
-                    <a href="<?php echo DOMAIN; ?>system-x"><img src="<?php echo IMAGES; ?>capsule_try_system_x.jpg" alt="How to Buy System X" width="253" height="218" /></a>
-                </div>
-                <div id="capsuleTwo">
-                    <a href="<?php echo DOMAIN; ?>system-x"><img src="<?php echo IMAGES; ?>capsule_place_an_order.jpg" alt="Full Line" width="253" height="218" /></a>
-                </div>
-                <div id="capsuleThree">
-                    <a href=""><img src="<?php echo IMAGES; ?>capsule_watch_videos.jpg" alt="Professional Detailing Supplies" width="253" height="218" /></a>
-                </div>
-            </div>
-        </div>
 
         <div style="clear:both; margin-bottom: 30px;"></div>
         <div id="mainContentSectionBottom">
@@ -56,7 +43,14 @@
                 <h2>Nuestros Productos</h2>
                 <div style="clear: both; margin-bottom: 30px;"></div>
             </div>
+        </div>
 
+        <div style="clear:both; margin-bottom: 30px;"></div>
+        <div id="mainContentSectionBottom">
+            <div style="clear:both;" class="categorias_index">
+                <h2>Aplicaciones</h2>
+                <div style="clear: both; margin-bottom: 30px;"></div>
+            </div>
         </div>
     </div>
 </div>

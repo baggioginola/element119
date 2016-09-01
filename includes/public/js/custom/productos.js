@@ -38,6 +38,17 @@ jQuery(document).ready(function () {
                 dataType: 'json',
                 async: false,
                 success: function (response_products) {
+
+                    var pdf = getPDF(ROOT_PDF, response_products.data.key_nombre);
+                    
+                    if(pdf != false) {
+                        var price_box = jQuery('.price-box');
+                        var pdf_aplication = name_array = [
+                            '<img style="display:inline;margin-right:5px;margin-left:10px" src="', IMAGES_LOCAL ,'icons/pdf_icon.gif" alt="">',
+                            '<a href="', pdf ,'" style="text-decoration:underline;" target="_blank">Aplicación PDF</a>'];
+                        price_box.append(pdf_aplication.join(''));
+                    }
+                    
                     var src = getImage(IMAGES_CATEGORY + response_products.data.categoria + '/' + type + '/' + response_products.data.key_nombre + '/', response_products.data.key_nombre, 1);
                     image_products.attr('src', src);
                     image_products.attr('title', response_products.data.nombre);
@@ -47,8 +58,7 @@ jQuery(document).ready(function () {
                     jQuery('#title-secondary').text(response_products.data.nombre);
                     name_array = ['<h1>', response_products.data.nombre, '</h1>'];
                     product_name.append(name_array.join(''));
-
-                    jQuery('#price').text('$ ' + response_products.data.precio);
+                    
                     var descripcion = (response_products.data.descripcion).replace(/(?:\r\n|\r|\n)/g, '<br />');
 
                     product_collateral_array = [
