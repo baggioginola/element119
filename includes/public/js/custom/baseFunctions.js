@@ -100,3 +100,20 @@ function getImage(root_images, name, i) {
     }
     return url;
 }
+
+function getPDF(root_pdf, name)
+{
+    var url = root_pdf + name + '.pdf';
+    var exists = jQuery.ajax({
+        url: url,
+        type: "POST",
+        cache: false,
+        dataType: 'json',
+        async: false
+    });
+
+    if (exists.status != 200) {
+        return false;
+    }
+    return url;
+}

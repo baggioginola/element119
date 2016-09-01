@@ -19,7 +19,7 @@
                 <a href=""><img src="<?php echo IMAGES; ?>homepage_callout.jpg" alt="System X Paint Protection" width="285" height="210" /></a>
             </div>
             <div id="contentImgButtonRight">
-                <a href=""><img src="<?php echo IMAGES; ?>learnmore.jpg" alt="Ceramic Coating" /></a>
+                <a href="<?php echo DOMAIN; ?>system-x"><img src="<?php echo IMAGES; ?>learnmore.jpg" alt="Recubrimiento Cerámica" width="160px"/></a>
             </div>
             <p class="txtPage">System X es un revestimiento de cerámica semi-permanente, que se aplica sin necesidad de máquina en unos 15 minutos, y proporciona brillo y una resistente protección a largo plazo.</p>
             <p class="txtPage">System X se convierte en un escudo para la pintura de su vehículo. La estructura molecular de System X se integra con las moléculas de la pintura, permaneciendo integrada a la pintura, a diferencia de cualquier cera o sellador que se pierden con unas cuantas lavadas.</p>
@@ -35,19 +35,6 @@
                     <img style="display:inline;float:right" src="<?php echo IMAGES; ?>9H_badge.png" alt="SGS 9H Hardness">
                 </a>
             </p>
-        </div>
-        <div id="contentCapsulesACC">
-            <div id="CapsulesACC">
-                <div id="capsuleOne">
-                    <a href="<?php echo DOMAIN; ?>system-x"><img src="<?php echo IMAGES; ?>capsule_try_system_x.jpg" alt="How to Buy System X" width="253" height="218" /></a>
-                </div>
-                <div id="capsuleTwo">
-                    <a href="<?php echo DOMAIN; ?>system-x"><img src="<?php echo IMAGES; ?>capsule_place_an_order.jpg" alt="Full Line" width="253" height="218" /></a>
-                </div>
-                <div id="capsuleThree">
-                    <a href=""><img src="<?php echo IMAGES; ?>capsule_watch_videos.jpg" alt="Professional Detailing Supplies" width="253" height="218" /></a>
-                </div>
-            </div>
         </div>
 
         <div style="clear:both; margin-bottom: 30px;"></div>

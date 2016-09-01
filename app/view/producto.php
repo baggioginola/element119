@@ -23,13 +23,7 @@
                     <div class="price-box">
                         <p class="txtPage" style="float: left;margin-top:5px">
                         <h1 id="price"></h1>
-                        <img style="display:inline;margin-right:5px" src="<?php echo IMAGES; ?>icons/pdf_icon.gif"
-                             alt="">
-                        <a href="" style="text-decoration:underline;">Data</a>
-                        <img style="display:inline;margin-right:5px;margin-left:10px"
-                             src="<?php echo IMAGES; ?>icons/pdf_icon.gif" alt="">
-                        <a href="" style="text-decoration:underline;">Aplicación PDF</a>
-
+                        
 
                         </p>
                     </div>

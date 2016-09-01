@@ -36,7 +36,7 @@
                             </a>
                         </div>
                         <div id="maintxt">La siguiente generación en protección cerámica</div>
-                        <div id="secondtxt">Nanotecnología de Recubrimiento Profesional</div>
+                        <div id="secondtxt">Recubrimientos Profesionales de Nanotecnología</div>
                     </div>
                 </div>
             </div>
