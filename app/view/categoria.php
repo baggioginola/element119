@@ -22,26 +22,29 @@
                     </div>
 
                     <div id="product-options-wrapper" class="product-options">
-                        To place an order or to speak about partnership opportunities please contact us.
+                        Para ordenar un producto ponte en contacto con nosotros
                         <div class="add-to-cart" style="margin:10px 0 0px 0px">
                             <button id="product-addtocart-button" class="button btn-cart" type="button"
-                                    title="Contact Us" onclick="location.href = '/contacts';">
+                                    title="Contact Us" onclick="location.href = '<?php echo DOMAIN ?>contacto';">
                 <span>
-                <span>Contact Us</span>
+                <span>Contactanos</span>
             </span>
                             </button>
                         </div>
                     </div>
+                    <!--
                     <div class="product-options-bottom">
                         <img alt="System X PRO Ceramic Coating Application Sheet"
                              src="<?php echo IMAGES; ?>icons/pdf_icon.gif" style="display:inline;margin-right:5px;">
                         <a style="text-decoration:underline;" href="">Application PDF</a>
                     </div>
+                    !-->
                 </div>
                 <div class="product-img-box">
                     <p class="product-image">
                         <img id="image_category" title="System X PRO" alt="System X PRO">
                     </p>
+
                     <div class="clearer"></div>
 
                 </div>
@@ -52,6 +55,7 @@
                     <div id="mainContentSectionBottom">
                         <div style="clear:both;" class="productos">
                             <h2>Otros Productos</h2>
+
                             <div style="clear: both; margin-bottom: 30px;"></div>
                         </div>
                     </div>

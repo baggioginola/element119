@@ -41,7 +41,7 @@ $(document).ready(function ()
     }, 'json');
 
     var url = 'productos/getAll';
-    var columns = [{data: 'categoria_nombre'}, {data: 'nombre'}, {data: 'precio'}];
+    var columns = [{data: 'categoria_nombre'}, {data: 'nombre'}];
 
     var table = masterDatatable(url, columns);
 

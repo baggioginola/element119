@@ -141,6 +141,8 @@ class Products extends BaseController
         foreach ($_POST as $key => $value) {
             if ($key == 'nombre') {
                 $this->parameters['key_nombre'] = formatForUrl($value);
+                $this->parameters['nombre'] = stripExcessWhitespace(sanitizeVariable(trim($value)));
+                continue;
             }
             if($key == 'precio') {
                 $this->parameters[$key] = number_format($value, 2);

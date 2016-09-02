@@ -167,8 +167,14 @@ class Categories extends BaseController
         foreach ($_POST as $key => $value) {
             if ($key == 'nombre') {
                 $this->parameters['key_nombre'] = formatForUrl($value);
+                $this->parameters['nombre'] = stripExcessWhitespace(sanitizeVariable(trim($value)));
+                continue;
             }
             if ($key == 'descripcion') {
+                $this->parameters[$key] = stripExcessWhitespace(sanitizeVariable(trim($value)));
+                continue;
+            }
+            if ($key == 'nombre_descripcion') {
                 $this->parameters[$key] = stripExcessWhitespace(sanitizeVariable(trim($value)));
                 continue;
             }

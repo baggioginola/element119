@@ -54,7 +54,7 @@
                              style="height: 110px;line-height: 110px;margin-bottom:15px;float:left">
                             <img width="100" src="<?php echo IMAGES; ?>15-minutes.jpg"
                                  alt="System X Ceramic Coating Kit" style="float:left">
-                            <span style="font-size:15px;">Rápida & Fácil Aplicación</span>
+                            <span style="font-size:15px;">Fácil y Rápida Aplicación</span>
                         </div>
                         <div class="itemImgSection"
                              style="height: 110px;line-height: 110px;margin-bottom:15px;float:left">

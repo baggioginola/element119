@@ -18,6 +18,7 @@
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                 </div>
             </div>
+            <!--
             <div class="form-group has-feedback">
                 <label for="ejemplo_email_3" class="col-lg-2 control-label">Precio</label>
                 <div class="col-lg-10">
@@ -25,7 +26,7 @@
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                 </div>
             </div>
-
+            !-->
             <div class="form-group has-feedback">
                 <label for="descripcion" class="col-lg-2 control-label">Descripcion</label>
                 <div class="col-lg-10">
@@ -60,7 +61,6 @@
             <tr>
                 <th>Categoria</th>
                 <th>Nombre</th>
-                <th>Precio</th>
                 <th></th>
                 <th></th>
             </tr>
