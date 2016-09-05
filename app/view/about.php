@@ -12,7 +12,7 @@
             </ul>
         </div>
         <div class="std">
-            <p> </p>
+            <p></p>
             <div class="imgContacts">
                 <img src="<?php echo IMAGES; ?>E119_warehouse.jpg" alt="Paint system car">
                 <br>
@@ -21,12 +21,18 @@
                 <img src="<?php echo IMAGES; ?>big_truck.jpg" alt="Paint Sealant Truck">
             </div>
             <h1>Sobre nosotros</h1>
-            <p class="txtPage">Elemento 119 se especializa en tecnologías de recubrimiento de cerámica de borde. </p>
-            <p class="txtPage">Posicionado en alta Histórico de Connecticut Litchfield Hills, sabemos cómo duras condiciones invernales y los contaminantes ambientales pueden dañar su auto, los aviones y la apariencia de la nave. Nos propusimos diseñar la próxima generación de productos que detallan profesionales, que tuvo lugar a los más altos estándares - y Element 119 emergidas</p>
-            <p class="txtPage">Esforzándose para formular productos que ofrecen resultados, no promesas. Elemento 119 produce sustancias químicas que detallan profesionales que son fáciles de usar, mientras que prolongar y mejorar el aspecto de su vehículo de manera efectiva. </p>
-            <p class="txtPage">Científicamente formulado utilizando componentes exclusivos y la tecnología. Ofrecemos las soluciones más avanzadas para la mejora y protección contra daños en la pintura, vidrio, escape, cromo, telas y alfombras superficies. </p>
-            <p class="txtPage">Ya sea que usted está buscando productos para emparejarse con el programa de garantía, necesitará un revestimiento formulado a medida, o la búsqueda de una etiqueta cooperativa privada - has encontrado un socio adecuado. </p>
-            <p class="txtPage"> </p>
+            <p class="txtPage"><label>Element 119</label> se especializa en Tecnologías de Punta para RECUBRIMIENTOS de Cerámica.</p>
+            <p class="txtPage">La planta se localiza en las altas colinas de Litchfield, Connecticut, en los Estados
+                Unidos.</p>
+            <p class="txtPage">Es bien conocido cómo las duras condiciones invernales, las sales y sustancias corrosivas
+                y los contaminantes ambientales pueden dañar su auto, los aviones y la apariencia de los transportes marítimos. Nos propusimos diseñar la
+                próxima generación de productos para protección profesional de pinturas, con los estándares más altos de calidad: y surgió <label>Element 119.</label></p>
+            <p class="txtPage">Nos esforzamos para formular productos que ofrecen resultados, no promesas. Element 119 produce productos químicos para detallado profesional, fáciles de usar, y que mejoran el aspecto de su vehículo de manera efectiva y espectacular.</p>
+            <p class="txtPage">Científicamente formulado, utilizando componentes exclusivos y la mejor tecnología, ofrecemos las soluciones más avanzadas para la
+                protección contra daños en la pintura, vidrio, pieles, cromo, telas, alfombras y superficies metálicas.</p>
+            <p class="txtPage">Si usted está buscando los mejores productos de revestimiento formulados con nanotecnología, cuente con los productos de Element
+                119.</p>
+            <p class="txtPage"></p>
             <p></p>
         </div>
     </div>

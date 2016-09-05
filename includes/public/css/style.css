@@ -560,7 +560,8 @@ strong a:hover {
 p.txtPage {
     font-size: 15px;
     color: #333;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 p.txtPage span {
@@ -2302,9 +2303,27 @@ textarea {
 
 table {
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
+    border:3px solid;
+    border-color: #000;
 }
 
+table thead tr th{
+    border-left: 3px solid;
+    border-color: #000;
+}
+table tr{
+    border-bottom: 3px solid;
+    border-color: #000;
+}
+
+table td {
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    border-color: #000;
+}
 *, :after, :before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
