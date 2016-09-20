@@ -22,7 +22,7 @@ $app->get('/preguntas-frecuentes', function() use ($app) {
     $app->render('faq.php');
 });
 
-$app->get('/acerca', function() use ($app) {
+$app->get('/nosotros', function() use ($app) {
     $app->render('about.php');
 });
 

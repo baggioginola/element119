@@ -1,3 +1,4 @@
+<script type="text/javascript" src="<?php echo JS; ?>custom/contacto.js"></script>
 <div id="contentContact">
     <div id="mainContentSection">
 
@@ -8,8 +9,7 @@
         <div id="contactMain">
             <div id="contForm">
                 <div id="left">
-                    <form id="contactForm" class="scaffold-form" method="post"
-                          action="">
+                    <form id="contactForm" class="scaffold-form" >
                         <div class="fieldset">
                             <p class="txtPage">Contáctanos</p>
                             <ul class="form-list">
@@ -21,8 +21,10 @@
                                         </label>
 
                                         <div class="input-box">
-                                            <input id="name" class="input-text required-entry" required="required" type="text"
-                                                   title="Nombre" name="nombre" autocomplete="off" placeholder="Introduzca nombre">
+                                            <input id="name" class="input-text required-entry" required="required"
+                                                   type="text"
+                                                   title="Nombre" name="nombre" autocomplete="off"
+                                                   placeholder="Introduzca nombre">
                                         </div>
                                     </div>
                                     <div class="field">
@@ -32,8 +34,9 @@
                                         </label>
 
                                         <div class="input-box">
-                                            <input id="email" class="input-text required-entry validate-email"
-                                                   type="email" title="Email" name="email" placeholder="Introduzca e-mail" autocomplete="off" required="required">
+                                            <input id="email" type="email" title="Email" name="email"
+                                                   placeholder="Introduzca e-mail" autocomplete="off"
+                                                   required="required">
                                         </div>
                                     </div>
                                 </li>
@@ -43,7 +46,7 @@
 
                                         <div class="input-box">
                                             <input id="company" class="input-text" type="text"
-                                                   title="Compañía" name="company" placeholder="Introduzca compañia">
+                                                   title="Compañía" name="company" placeholder="Introduzca compañía">
                                         </div>
                                     </div>
                                     <div class="field">
@@ -51,7 +54,8 @@
 
                                         <div class="input-box">
                                             <input id="website" class="input-text" type="text"
-                                                   title="Company Website" name="website" placeholder="Introduzca Sitio Web" autocomplete="off">
+                                                   title="Company Website" name="website"
+                                                   placeholder="Introduzca Sitio Web" autocomplete="off">
                                         </div>
                                     </div>
                                 </li>
@@ -320,19 +324,20 @@
                                     </label>
 
                                     <div class="input-box">
-                                        <textarea id="comment" class="required-entry input-text" rows="3" cols="5"
-                                                  title="Comment" name="comment" placeholder="Introduzca comentarios" required="required"></textarea>
+                                        <textarea id="mensaje" class="required-entry input-text" rows="3" cols="5"
+                                                  title="mensaje" name="mensaje" placeholder="Introduzca comentarios"
+                                                  required="required" style="resize: none;"></textarea>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="buttons-set" style="border-top: medium none;">
-                            <input id="hideit" type="text" style="display:none !important;" value="" name="hideit">
                             <button class="button" title="Enviar" type="submit">
             <span>
              <span>Enviar</span>
                          </span>
                             </button>
+                            <h6 style="color: #8dbc4c; display: none;" id="mensaje_servidor">El mensaje fue enviado correctamente</h6>
                         </div>
                         <div style="display:none;">
                             <input id="source" type="text" value="http://www.element119.com/" name="source">

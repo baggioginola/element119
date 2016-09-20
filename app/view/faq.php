@@ -240,8 +240,9 @@
                                     maquillaje) y cubrir solo un panel con una capa fina. Dejar secar durante 2-3
                                     minutos (sin permitir que seque completamente), y pulir muy suavemente con una piel
                                     de ante o con una toalla seca de microfibra. Puede revisar la explicación detallada
-                                    en link
-                                    <a href="#">System X Aplicación formato PDF</a>
+                                    en el link
+                                    <a href="<?php echo PDF; ?>system-x-pro-proteccion-de-alto-brillo-para-la-pintura.pdf">System
+                                        X Aplicación formato PDF</a>
                                 </p>
                                 <br>
 
@@ -313,11 +314,10 @@
                                     <strong>¿Qué pasa si me olvido de una mancha mientras se aplica System X?</strong>
                                 </p>
 
-                                <p class="txtPage"> Si quedan algunas manchas, éstas pueden resolverse fácilmente. Basta
+                                <p class="txtPage">Si quedan algunas manchas, éstas pueden resolverse fácilmente. Basta
                                     con aplicar más System X en la zona donde faltó por aplicar, y después pulir
                                     nuevamente con suavidad. System X se integrará por sí mismo con la superficie
-                                    tratada
-                                    previamente.</p>
+                                    tratada previamente.</p>
                                 <br>
 
                                 <p class="txtPage">
@@ -430,28 +430,29 @@
                                     cercanas a los puertos de escape.</p>
 
                                 <p class="txtPage">
-                                    System X cubre aprox. 22 m2 por cada 100 ml. Véase las tablas mostradas abajo para obtener más detalles. 
+                                    System X cubre aprox. 22 m2 por cada 100 ml. Véase las tablas mostradas abajo para
+                                    obtener más detalles.
                                     <br>
                                     Botella de 65 ml=14 m2 de Cobertura
                                     <br>
                                     botella de 325ml = 65m2 de Cobertura
                                 </p>
 
-                                <table border="1">
+                                <table style="width: 730px;">
                                     <tbody>
                                     <tr>
-                                        <th>Modelo / Tamaño</th>
-                                        <th>Cantidad sugerida de System X</th>
+                                        <td>Modelo / Tamaño</td>
+                                        <td>Cantidad sugerida de System X</td>
                                     </tr>
                                     <tr></tr>
                                     <tr>
                                         <td style="width:33%">
                                             <p>
-                                                <em>< 14 m2 </em>
+                                                <em>< 14 m2 </em>
                                                 <br>
                                                 <em>Honda Civic</em>
                                                 <br>
-                                                <em>Cadillac Escalade, etc.</em>
+                                                <em>Cadillac Escalade, etc..</em>
                                                 <br>
                                             </p>
                                         </td>
@@ -466,18 +467,14 @@
                                     <strong>Barco</strong>
                                     <br>
                                 </p>
-                                <table border="1">
-
-                                    <thead>
+                                <table style="width: 730px;">
+                                    <tbody>
                                     <tr>
                                         <td>Modelo / Tamaño</td>
                                         <td>Cantidad sugerida de System X</td>
                                     </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr></tr>
                                     <tr>
-                                        <td>
+                                        <td style="width:33%">
                                             <em>< 25' Vessel</em>
                                             <br>
                                             <em>Bayliner 160 OB BR</em>
@@ -499,8 +496,6 @@
                                     </tr>
                                     </tbody>
                                 </table>
-
-
                                 <em>
                                     * Calcular cuánto se necesita: = Pies cuadrados.
                                     <strong>Duración de la línea de flotación en ft.</strong>
@@ -514,11 +509,11 @@
                                 <p class="txtPage">
                                     <strong>Aeronave</strong>
                                 </p>
-                                <table border="1">
+                                <table style="width: 730px;">
                                     <tbody>
                                     <tr>
-                                        <th>Modelo / Tamaño</th>
-                                        <th>Cantidad sugerida de System X</th>
+                                        <td>Modelo / Tamaño</td>
+                                        <td>Cantidad sugerida de System X</td>
                                     </tr>
                                     <tr></tr>
                                     <tr>
@@ -564,11 +559,11 @@
                                 <p class="txtPage">
                                     <strong>Motocicletas</strong>
                                 </p>
-                                <table border="1">
+                                <table style="width: 730px;;">
                                     <tbody>
                                     <tr>
-                                        <th>Modelo / Tamaño</th>
-                                        <th>Cantidad sugerida de System X</th>
+                                        <td>Modelo / Tamaño</td>
+                                        <td>Cantidad sugerida de System X</td>
                                     </tr>
                                     <tr></tr>
                                     <tr>
@@ -579,23 +574,23 @@
                                                 Motocicleta con sidecar
                                             </em>
                                         </td>
-                                        <td>De 1\4 - 1 botella de 65 ml de System X</td>
+                                        <td>De ¼ a 1 botella de 65 ml de System X</td>
                                     </tr>
                                     </tbody>
                                 </table>
                                 <p class="txtPage" style="margin-top:40px">
                                     <strong>Casas Rodantes</strong>
                                 </p>
-                                <table border="1">
+                                <table style="width: 730px;">
                                     <tbody>
                                     <tr>
-                                        <th>Modelo / Tamaño</th>
-                                        <th>Cantidad sugerida de System X</th>
+                                        <td>Modelo / Tamaño</td>
+                                        <td>Cantidad sugerida de System X</td>
                                     </tr>
                                     <tr></tr>
                                     <tr>
                                         <td style="width:33%">
-                                            <em>< 1500 sq. ft. (<140 m2)</em>
+                                            <em>< 1500 sq ft (<140 m2)</em>
                                             <br>
                                             Class A Motorhomes
                                             <br>
@@ -609,7 +604,7 @@
                                     </tr>
                                     <tr>
                                         <td style="width:33%">
-                                            <em>< 750 sq. ft. (70 m2)</em>
+                                            <em>< 750 sq ft (<70 m2)</em>
                                             <br>
                                             Clase B & C Motorhomes
                                         </td>
@@ -617,11 +612,10 @@
                                     </tr>
                                     </tbody>
                                 </table>
-                                </tbody>
-                                </table>
+
                                 <p>
                                     <a href="<?php echo DOMAIN; ?>contacto">Contáctenos</a>
-                                    si necesita ayuda calculando cuánto producto necesita
+                                    si necesita ayuda calculando cuánto producto necesita.
                                 </p>
                             </div>
                         </div>
