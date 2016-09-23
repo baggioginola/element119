@@ -55,7 +55,34 @@ class UserModel extends Database
 
         $result_array = array();
 
-        $query = "SELECT id,nombre,apellidos,email,password,nivel,password FROM " . self::$table . " WHERE id = '" . $id . "' ";
+        $query = "SELECT id,nombre,apellidos,email,password,nivel FROM " . self::$table . " WHERE id = '" . $id . "' ";
+
+        if (!$result = $this->query($query)) {
+            return false;
+        }
+
+        $this->close_connection();
+
+        while ($row = $this->fetch_assoc($result)) {
+            $result_array = $row;
+        }
+
+        return $result_array;
+    }
+
+    public function getByToken($token = '')
+    {
+        if (empty($token)) {
+            return false;
+        }
+
+        if (!$this->connect()) {
+            return false;
+        }
+
+        $result_array = array();
+
+        $query = "SELECT id, token, token_expiration FROM " . self::$table . " WHERE token = '" . $token . "' ";
 
         if (!$result = $this->query($query)) {
             return false;

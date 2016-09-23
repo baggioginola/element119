@@ -4,8 +4,9 @@ require_once __DIR__ . '/includes/header.inc.php';
 
 require_once 'routes_backend.php';
 
-$app->get('/', function() use($app){
-   $app->render('index.php');
+
+$app->get('/login', function() use($app){
+    $app->render('login.php', array('layout' => false));
 });
 
 $app->get('/usuarios', function() use($app){
@@ -20,6 +21,10 @@ $app->get('/productos', function() use($app){
     $app->render('/productos.php');
 });
 
+$app->get('/login', function() use($app){
+    $app->render('/login.php');
+});
+
 $app->get('/test/:id', function($id) use($app){
     switch($id){
         case 'users':
@@ -30,8 +35,6 @@ $app->get('/test/:id', function($id) use($app){
             if(!$result = UserController::singleton()->getAll()){
                 echo 'Fail';
             }
-
-
             break;
         case 'logs':
             require_once 'core/classes/CLogs.class.inc.php';

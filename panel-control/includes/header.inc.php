@@ -6,11 +6,15 @@
  * Time: 3:33 PM
  */
 
+session_start();
+
 require_once __DIR__ . '/../config.php';
 require_once __DIR__ . '/../autoload.common.php';
 require_once FRAMEWORK . 'Slim/Slim.php';
 require_once 'functions.inc.php';
 require_once CLASSES . 'CLogs.class.inc.php';
+
+require_once __DIR__ . '/../auth.php';
 
 if (strcasecmp(ENVIRONMENT, 'test') == 0) {
     error_reporting(E_ALL);
@@ -27,6 +31,8 @@ $app  = new \Slim\Slim(array(
         'http.version' => '1.1'
     )
 );
+
+$app->add(new CAuth());
 
 $app->notFound(function () use ($app) {
 

@@ -23,7 +23,9 @@ class UserController extends BaseController
         'email' => TYPE_ALPHA,
         'password' => TYPE_PASSWORD,
         'nivel' => TYPE_INT,
-        'active' => TYPE_INT
+        'active' => TYPE_INT,
+        'token' => TYPE_ALPHA,
+        'token_expiration' => TYPE_DATETIME
     );
 
     /**
@@ -42,7 +44,7 @@ class UserController extends BaseController
      */
     public function getAll()
     {
-        if (!$result = UserModel::singleton()->getAll()){
+        if (!$result = UserModel::singleton()->getAll()) {
             return json_encode($this->getResponse(STATUS_FAILURE_INTERNAL, MESSAGE_ERROR));
         }
         return json_encode($result);
@@ -116,6 +118,45 @@ class UserController extends BaseController
         }
 
         return json_encode($this->getResponse());
+    }
+
+    public function updateToken($id = '', $token = '')
+    {
+        if (!$id) {
+            return false;
+        }
+
+        $data = array('token' => $token, 'token_expiration' => gmdate('Y-m-d H:i:s', strtotime('+1 hour')));
+
+        if (!UserModel::singleton()->edit($data, $id)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function getByToken($token = '')
+    {
+        if (empty($token)) {
+            return false;
+        }
+
+        $result = UserModel::singleton()->getByToken($token);
+
+        if(!$result) {
+            return false;
+        }
+
+        return $result;
+    }
+
+    private function setId()
+    {
+        $id = $this->parameters['id'];
+
+        unset($this->parameters['id']);
+
+        return $id;
     }
 
     /**
