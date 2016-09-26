@@ -45,8 +45,16 @@ class Login extends BaseController
 
         UserController::singleton()->updateToken($result['id'], $token);
 
-        Session::singleton()->sealSession($token);
+        Session::singleton()->store($token);
 
+        return json_encode($this->getResponse());
+    }
+
+    public function logout()
+    {
+        if(!Session::singleton()->destroy()) {
+            return json_encode($this->getResponse(STATUS_FAILURE_CLIENT, MESSAGE_ERROR));
+        }
         return json_encode($this->getResponse());
     }
 

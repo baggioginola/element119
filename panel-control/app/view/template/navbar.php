@@ -9,5 +9,9 @@
             </button>
             <a class="navbar-brand" href="./">Nasiol</a>
         </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="logout">Logout</a></li>
+        </ul>
+        <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
     </div>
 </nav>

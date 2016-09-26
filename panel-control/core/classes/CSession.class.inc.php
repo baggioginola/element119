@@ -21,12 +21,22 @@ class Session
         return self::$object;
     }
 
-    public function sealSession($token)
+    public function store($token)
     {
         $_SESSION['token'] = $token;
     }
 
-    public function validateSession()
+    public function destroy()
+    {
+        if(!isset($_SESSION['token'])) {
+            return false;
+        }
+
+        unset($_SESSION['token']);
+        return true;
+    }
+
+    public function validate()
     {
         if(!$token = $this->getToken()){
             return false;

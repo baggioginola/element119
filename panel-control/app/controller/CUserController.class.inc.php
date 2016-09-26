@@ -122,7 +122,7 @@ class UserController extends BaseController
 
     public function updateToken($id = '', $token = '')
     {
-        if (!$id) {
+        if ($id == '') {
             return false;
         }
 
@@ -148,15 +148,6 @@ class UserController extends BaseController
         }
 
         return $result;
-    }
-
-    private function setId()
-    {
-        $id = $this->parameters['id'];
-
-        unset($this->parameters['id']);
-
-        return $id;
     }
 
     /**

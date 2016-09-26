@@ -22,7 +22,7 @@ class CAuth extends \Slim\Middleware
 
     public function authenticate()
     {
-        return Session::singleton()->validateSession();
+        return Session::singleton()->validate();
     }
 
     public function isPublicUrl($url)
@@ -36,7 +36,12 @@ class CAuth extends \Slim\Middleware
     public function call()
     {
         if ($this->isPublicUrl($this->app->request->getPathInfo())) {
-            $this->next->call();
+            if(!$this->authenticate()) {
+                $this->next->call();
+            }
+            else {
+                $this->app->redirect('categorias');
+            }
         }
         else {
             if(!$this->authenticate()) {
