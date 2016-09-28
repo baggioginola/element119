@@ -7,11 +7,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./">Nasiol</a>
+            <a class="navbar-brand" href="./">Element 119</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="logout">Logout</a></li>
         </ul>
-        <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+        <p class="navbar-text navbar-right">Bienvenido: <a href="#" class="navbar-link"><?php echo (isset($_SESSION['name']) && isset($_SESSION['last_name'])) ? $_SESSION['name'] . ' ' . $_SESSION['last_name'] :  ''; ?></a></p>
     </div>
 </nav>

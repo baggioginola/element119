@@ -9,7 +9,7 @@
 session_start();
 
 require_once __DIR__ . '/../config.php';
-require_once __DIR__ . '/../autoload.common.php';
+//require_once __DIR__ . '/../autoload.common.php';
 require_once FRAMEWORK . 'Slim/Slim.php';
 require_once 'functions.inc.php';
 require_once CLASSES . 'CLogs.class.inc.php';

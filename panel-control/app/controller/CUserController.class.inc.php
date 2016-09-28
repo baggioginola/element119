@@ -150,6 +150,17 @@ class UserController extends BaseController
         return $result;
     }
 
+    public function addFakeData($data)
+    {
+        foreach ($data as $key => $value) {
+            $this->parameters[$key] = $value;
+        }
+
+        $result = UserModel::singleton()->add($this->parameters);
+
+        return $result;
+    }
+
     /**
      * @return bool
      */

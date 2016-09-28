@@ -9,6 +9,7 @@
 
 require_once CLASSES . 'CEncryption.class.inc.php';
 require_once __CONTROLLER__ . 'CUserController.class.inc.php';
+
 class Session
 {
     private static $object = null;
@@ -26,10 +27,24 @@ class Session
         $_SESSION['token'] = $token;
     }
 
+    public function storeUserInfo($name = '', $last_name = '')
+    {
+        $_SESSION['name'] = $name;
+        $_SESSION['last_name'] = $last_name;
+    }
+
     public function destroy()
     {
-        if(!isset($_SESSION['token'])) {
+        if (!isset($_SESSION['token'])) {
             return false;
+        }
+
+        if (isset($_SESSION['name'])) {
+            unset($_SESSION['name']);
+        }
+
+        if (isset($_SESSION['last_name'])) {
+            unset($_SESSION['last_name']);
         }
 
         unset($_SESSION['token']);
@@ -38,15 +53,15 @@ class Session
 
     public function validate()
     {
-        if(!$token = $this->getToken()){
+        if (!$token = $this->getToken()) {
             return false;
         }
 
-        if(!$result = UserController::singleton()->getByToken($token)) {
+        if (!$result = UserController::singleton()->getByToken($token)) {
             return false;
         }
 
-        if($result['token_expiration'] < gmdate('Y-m-d H:i:s')) {
+        if ($result['token_expiration'] < gmdate('Y-m-d H:i:s')) {
             return false;
         }
 
@@ -55,7 +70,7 @@ class Session
 
     private function getToken()
     {
-        if(!isset($_SESSION['token'])) {
+        if (!isset($_SESSION['token'])) {
             return false;
         }
         return $_SESSION['token'];
