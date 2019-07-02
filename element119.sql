@@ -22,7 +22,7 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `usuario`(`nombre`,`apellidos`,`email`,`password`,`nivel`) 
-values('Mario', 'Cuevas', 'mario.cuevas@gameloft.com', MD5('3lem3nt12345'),0);
+values('Mario', 'Cuevas', 'mariocuevas88@gmail.com', MD5('3lem3nt12345'),0);
 
 DROP TABLE IF EXISTS `categoria`;
 
